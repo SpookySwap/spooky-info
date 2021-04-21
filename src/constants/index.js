@@ -18,6 +18,8 @@ export const SUPPORTED_LIST_URLS__NO_ENS = [
 
 // hide from overview list
 export const TOKEN_BLACKLIST = [
+  '0xdea0102f2d45a944a720a1cdef87ec8366ea04f5',
+  '0x3c393ed453c1017315d4401f6097ea4b944c06ac',
 ]
 
 // pair blacklist

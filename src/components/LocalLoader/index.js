@@ -27,7 +27,7 @@ const LocalLoader = ({ fill }) => {
 
   return (
     <Wrapper fill={fill}>
-      <img style={{ width: '300px' }} src={grim} alt="loading-icon" />
+      <img style={{ width: '150px' }} src={grim} alt="loading-icon" />
     </Wrapper>
   )
 }

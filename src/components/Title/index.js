@@ -6,7 +6,6 @@ import { Flex } from 'rebass'
 import Link from '../Link'
 import { RowFixed } from '../Row'
 import Logo from '../../assets/logo_with_text.svg'
-import Wordmark from '../../assets/wordmark_white.svg'
 
 import { BasicLink } from '../Link'
 import { useMedia } from 'react-use'
