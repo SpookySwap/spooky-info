@@ -68,7 +68,7 @@ const WarningWrapper = styled.div`
 `
 
 const WarningBanner = styled.div`
-  background-color: #ff6871;
+  background-color: #FF6978;
   padding: 1.5rem;
   color: white;
   width: 100%;
@@ -111,7 +111,7 @@ function App() {
         {showWarning && (
           <WarningWrapper>
             <WarningBanner>
-              {`Warning: The data on this site has only synced to Ethereum block ${latestBlock} (out of ${headBlock}). Please check back soon.`}
+              {`Warning: The data on this site has only synced to Fantom block ${latestBlock} (out of ${headBlock}). Please check back soon.`}
             </WarningBanner>
           </WarningWrapper>
         )}
