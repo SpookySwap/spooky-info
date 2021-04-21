@@ -7,7 +7,7 @@ export const priceOverrides = [
   '0x04068da6c83afcfa0e13ba15a6696662335d5b75', // USDC
   '0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e', // DAI
 ]
-
+//   '0x049d68029688eabf473097a2fc38ef61633a3c7a', // fusdt
 interface ReturnMetrics {
   hodleReturn: number // difference in asset values t0 -> t1 with t0 deposit amounts
   netReturn: number // net return from t0 -> t1
@@ -28,7 +28,7 @@ interface Position {
   token1PriceUSD: number
 }
 
-const PRICE_DISCOVERY_START_TIMESTAMP = 1589747086
+const PRICE_DISCOVERY_START_TIMESTAMP = 1618668000
 
 function formatPricesForEarlyTimestamps(position): Position {
   if (position.timestamp < PRICE_DISCOVERY_START_TIMESTAMP) {
@@ -40,10 +40,10 @@ function formatPricesForEarlyTimestamps(position): Position {
     }
     // WETH price
     if (position.pair?.token0.id === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83') {
-      position.token0PriceUSD = 203
+      position.token0PriceUSD = 0.45
     }
     if (position.pair?.token1.id === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83') {
-      position.token1PriceUSD = 203
+      position.token1PriceUSD = 0.45
     }
   }
   return position

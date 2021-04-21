@@ -28,7 +28,7 @@ export const stakingClient = new ApolloClient({
 
 export const blockClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.thegraph.com/subgraphs/name/ord786/fantom-blocks',
+    uri: 'https://api.thegraph.com/subgraphs/name/matthewlilley/fantom-blocks',
   }),
   cache: new InMemoryCache(),
 })

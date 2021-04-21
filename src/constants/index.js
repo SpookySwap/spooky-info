@@ -37,6 +37,9 @@ export const UNTRACKED_COPY = 'Derived USD values may be inaccurate without liqu
 
 // tokens that should be tracked but arent due to lag in subgraph
 export const TRACKED_OVERRIDES = [
+
+]
+/*
   '0xfdb9ab8b9513ad9e419cf19530fee49d412c3ee3', // ftm-btc
   '0x623ee4a7f290d11c11315994db70fb148b13021d', // ftm-ice
   '0xebf374bb21d83cf010cc7363918776adf6ff2bf6', // ftm-aave
@@ -54,4 +57,4 @@ export const TRACKED_OVERRIDES = [
   '0xf0702249f4d3a25cd3ded7859a165693685ab577', // ftm-weth
   '0xbf4d61d4cec3a9dff7452d8987e1cc2943e2eb4c', // ftm-yfi
   '0xb77b223490e1f5951ec79a8d09db9eab2adcb934' // ftm-cream
-]
+  */
