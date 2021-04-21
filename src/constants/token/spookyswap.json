@@ -8,7 +8,10 @@
   },
   "tags": {},
   "logoURI": "http://spookyswap.finance/images/tokens/BOO.png",
-  "keywords": ["spookyswap", "default"],
+  "keywords": [
+    "spookyswap",
+    "default"
+  ],
   "tokens": [
     {
       "name": "Aave",
@@ -169,7 +172,14 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png"
+    },
+    {
+      "name": "ZooCoin",
+      "symbol": "ZOO",
+      "address": "0x09e145A1D53c0045F41aEEf25D8ff982ae74dD56",
+      "chainId": 250,
+      "decimals": 0,
+      "logoURI": "https://spookyswap.finance/images/tokens/ZOO.png"
     }
   ]
 }
-
