@@ -5,6 +5,7 @@ import utc from 'dayjs/plugin/utc'
 import getTokenList from '../utils/tokenLists'
 import { healthClient } from '../apollo/client'
 import { SUBGRAPH_HEALTH } from '../apollo/queries'
+import defaultTokenJson from '../constants/token/spookyswap.json'
 dayjs.extend(utc)
 
 const UPDATE = 'UPDATE'
@@ -262,18 +263,19 @@ export function useSessionStart() {
 
   return parseInt(seconds / 1000)
 }
-
+/*
+await SUPPORTED_LIST_URLS__NO_ENS.reduce(async (fetchedTokens, url) => {
+        const tokensSoFar = await fetchedTokens
+        const newTokens = await getTokenList(url)
+        return Promise.resolve([...tokensSoFar, ...newTokens.tokens])
+      }, Promise.resolve([])) */
 export function useListedTokens() {
   const [state, { updateSupportedTokens }] = useApplicationContext()
   const supportedTokens = state?.[SUPPORTED_TOKENS]
 
   useEffect(() => {
     async function fetchList() {
-      const allFetched = await SUPPORTED_LIST_URLS__NO_ENS.reduce(async (fetchedTokens, url) => {
-        const tokensSoFar = await fetchedTokens
-        const newTokens = await getTokenList(url)
-        return Promise.resolve([...tokensSoFar, ...newTokens.tokens])
-      }, Promise.resolve([]))
+      const allFetched = defaultTokenJson
       let formatted = allFetched?.map((t) => t.address.toLowerCase())
       updateSupportedTokens(formatted)
     }

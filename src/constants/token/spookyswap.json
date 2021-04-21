@@ -1,0 +1,175 @@
+{
+  "name": "SpookySwap Default List",
+  "timestamp": "2021-04-06T22:05:02Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "http://spookyswap.finance/images/tokens/BOO.png",
+  "keywords": ["spookyswap", "default"],
+  "tokens": [
+    {
+      "name": "Aave",
+      "symbol": "AAVE",
+      "address": "0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png"
+    },
+    {
+      "name": "Badger",
+      "symbol": "BADGER",
+      "address": "0x753fbc5800a8C8e3Fb6DC6415810d627A387Dfc9",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/13287/large/badger_dao_logo.jpg"
+    },
+    {
+      "name": "Band Protocol",
+      "symbol": "BAND",
+      "address": "0x46E7628E8b4350b2716ab470eE0bA1fa9e76c6C5",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/9545/large/band-protocol.png"
+    },
+    {
+      "name": "SpookySwap",
+      "symbol": "BOO",
+      "address": "0x6E0aA9718C56Ef5d19ccf57955284C7CD95737be",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "http://spookyswap.finance/images/tokens/BOO.png"
+    },
+    {
+      "name": "Cover Protocol",
+      "symbol": "COVER",
+      "address": "0xB01E8419d842beebf1b70A7b5f7142abbaf7159D",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/13563/large/1_eWBbDaqpxXqt7WYPSP4qSw.jpeg"
+    },
+    {
+      "name": "Cream",
+      "symbol": "CREAM",
+      "address": "0x657A1861c15A3deD9AF0B6799a195a249ebdCbc6",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/11976/large/Cream.png"
+    },
+    {
+      "name": "Curve DAO",
+      "symbol": "CRV",
+      "address": "0x1E4F97b9f9F913c46F1632781732927B9019C68b",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/12124/large/Curve.png"
+    },
+    {
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/9956/large/dai-multi-collateral-mcd.png"
+    },
+    {
+      "name": "Digg",
+      "symbol": "DIGG",
+      "address": "0x08f6fE8f4dC577CF81E40E03E561d29B8b33E19b",
+      "chainId": 250,
+      "decimals": 9,
+      "logoURI": "https://assets.coingecko.com/coins/images/13737/large/digg.PNG"
+    },
+    {
+      "name": "Frapped USDT",
+      "symbol": "fUSDT",
+      "address": "0x049d68029688eAbF473097a2fC38ef61633A3C7A",
+      "chainId": 250,
+      "decimals": 6,
+      "logoURI": "https://assets.coingecko.com/coins/images/325/large/Tether-logo.png"
+    },
+    {
+      "name": "IceToken",
+      "symbol": "ICE",
+      "address": "0xf16e81dce15B08F326220742020379B855B87DF9",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://zapper.fi/images/ICE-icon.png"
+    },
+    {
+      "name": "ChainLink",
+      "symbol": "LINK",
+      "address": "0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/877/large/chainlink-new-logo.png"
+    },
+    {
+      "name": "Saffron",
+      "symbol": "SFI",
+      "address": "0x924828a9Fb17d47D0eb64b57271D10706699Ff11",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/13117/large/sfi_red_250px.png"
+    },
+    {
+      "name": "Synthetix Network",
+      "symbol": "SNX",
+      "address": "0x56ee926bD8c72B2d5fa1aF4d9E4Cbb515a1E3Adc",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/3406/large/SNX.png"
+    },
+    {
+      "name": "Sushi",
+      "symbol": "SUSHI",
+      "address": "0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png"
+    },
+    {
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "address": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
+      "chainId": 250,
+      "decimals": 6,
+      "logoURI": "https://assets.coingecko.com/coins/images/6319/large/USD_Coin_icon.png"
+    },
+    {
+      "name": "Wrapped Bitcoin",
+      "symbol": "wBTC",
+      "address": "0x321162Cd933E2Be498Cd2267a90534A804051b11",
+      "chainId": 250,
+      "decimals": 8,
+      "logoURI": "https://assets.coingecko.com/coins/images/7598/large/wrapped_bitcoin_wbtc.png"
+    },
+    {
+      "name": "Wrapped Ether",
+      "symbol": "wETH",
+      "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/279/large/ethereum.png"
+    },
+    {
+      "name": "Wrapped FTM",
+      "symbol": "wFTM",
+      "address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://ftmscan.com/token/images/wFtm_32.png"
+    },
+    {
+      "name": "yearn.finance",
+      "symbol": "YFI",
+      "address": "0x29b0Da86e484E1C0029B56e817912d778aC0EC69",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png"
+    }
+  ]
+}
+

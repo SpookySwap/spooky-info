@@ -24,9 +24,9 @@ function formatPercent(rawPercent) {
 }
 
 export default function UniPrice() {
-  const daiPair = usePairData('0xa478c2975ab1ea89e8196811f51a7b7ade33eb11')
-  const usdcPair = usePairData('0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc')
-  const usdtPair = usePairData('0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852')
+  const daiPair = usePairData('0xe120ffbda0d14f3bb6d6053e90e63c572a66a428')
+  const usdcPair = usePairData('0x2b4c76d0dc16be1c31d4c1dc53bf9b45987fc75c')
+  const usdtPair = usePairData('0x5965e53aa80a0bcf1cd6dbdd72e6a9b2aa047410')
 
   const totalLiquidity = useMemo(() => {
     return daiPair && usdcPair && usdtPair
@@ -42,19 +42,19 @@ export default function UniPrice() {
     <PriceCard>
       <AutoColumn gap="10px">
         <RowFixed>
-          <TYPE.main>DAI/ETH: {formattedNum(daiPerEth, true)}</TYPE.main>
+          <TYPE.main>DAI/FTM: {formattedNum(daiPerEth, true)}</TYPE.main>
           <TYPE.light style={{ marginLeft: '10px' }}>
             {daiPair && totalLiquidity ? formatPercent(daiPair.trackedReserveUSD / totalLiquidity) : '-'}
           </TYPE.light>
         </RowFixed>
         <RowFixed>
-          <TYPE.main>USDC/ETH: {formattedNum(usdcPerEth, true)}</TYPE.main>
+          <TYPE.main>USDC/FTM: {formattedNum(usdcPerEth, true)}</TYPE.main>
           <TYPE.light style={{ marginLeft: '10px' }}>
             {usdcPair && totalLiquidity ? formatPercent(usdcPair.trackedReserveUSD / totalLiquidity) : '-'}
           </TYPE.light>
         </RowFixed>
         <RowFixed>
-          <TYPE.main>USDT/ETH: {formattedNum(usdtPerEth, true)}</TYPE.main>
+          <TYPE.main>USDT/FTM: {formattedNum(usdtPerEth, true)}</TYPE.main>
           <TYPE.light style={{ marginLeft: '10px' }}>
             {usdtPair && totalLiquidity ? formatPercent(usdtPair.trackedReserveUSD / totalLiquidity) : '-'}
           </TYPE.light>
