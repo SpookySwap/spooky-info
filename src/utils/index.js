@@ -36,35 +36,41 @@ export function getTimeframe(timeWindow) {
   }
   return utcStartTime
 }
-
-export function getPoolLink(token0Address, token1Address = null, remove = false) {
-  if (!token1Address) {
-    return (
-      `https://spookyswap.finance/` +
+/*
++
       (remove ? `remove` : `add`) +
       `/${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'ETH' : token0Address}/${'ETH'}`
-    )
-  } else {
-    return (
-      `https://spookyswap.finance/` +
+       +
       (remove ? `remove` : `add`) +
       `/${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'ETH' : token0Address}/${token1Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'ETH' : token1Address
       }`
+      */
+export function getPoolLink(token0Address, token1Address = null, remove = false) {
+  if (!token1Address) {
+    return (
+      `https://spookyswap.finance/add`
+    )
+  } else {
+    return (
+      `https://spookyswap.finance/add`
     )
   }
 }
 
 export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
-    return `https://spookyswap.finance/swap?inputCurrency=${token0Address}`
+    return `https://spookyswap.finance/swap`
   } else {
-    return `https://spookyswap.finance/swap?inputCurrency=${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'ETH' : token0Address
-      }&outputCurrency=${token1Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'ETH' : token1Address}`
+    return `https://spookyswap.finance/swap`
   }
 }
+/*
+?inputCurrency=${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'ETH' : token0Address
+      }&outputCurrency=${token1Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'ETH' : token1Address}`
+      */
 
 export function getMiningPoolLink(token0Address) {
-  return `https://app.uniswap.org/#/uni/ETH/${token0Address}`
+  return `https://spookyswap.finance`
 }
 
 export function getUniswapAppLink(linkVariable) {

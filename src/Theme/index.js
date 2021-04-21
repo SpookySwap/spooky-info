@@ -43,7 +43,7 @@ const theme = (darkMode, color) => ({
 
   //specialty colors
   modalBG: darkMode ? 'rgba(18, 17, 34, 0.75)' : 'rgba(18, 17, 34, 0.6)',
-  advancedBG: darkMode ? 'rgba(255, 255, 255, 0.12)' : 'rgba(255, 255, 255, 0.4)',
+  advancedBG: darkMode ? '#1E1D2D' : 'rgba(255, 255, 255, 0.4)',
   onlyLight: darkMode ? '#121122' : 'transparent',
   divider: darkMode ? '#4A4C70' : 'rgba(49, 65, 94, 0.4)',
 
@@ -145,7 +145,7 @@ export const ThemedBackground = styled.div`
   height: 200vh;
   mix-blend-mode: color;
   background: ${({ backgroundColor }) =>
-    `radial-gradient(50% 50% at 50% 50%, ${backgroundColor} 0%, rgba(255, 255, 255, 0) 100%)`};
+  `radial-gradient(50% 50% at 50% 50%, ${backgroundColor} 0%, rgba(255, 255, 255, 0) 100%)`};
   position: absolute;
   top: 0px;
   left: 0px;
