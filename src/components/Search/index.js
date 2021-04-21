@@ -62,8 +62,10 @@ const Input = styled.input`
   display: flex;
   align-items: center;
   white-space: nowrap;
+  padding: 12px 16px;
   background: none;
-  border: none;
+  border-radius: 8px;
+  border: 2px solid ${({ theme }) => theme.primary2};
   outline: none;
   width: 100%;
   color: ${({ theme }) => theme.text1};

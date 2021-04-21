@@ -1,12 +1,7 @@
 import React from 'react'
 import styled, { css, keyframes } from 'styled-components'
 import { useDarkModeManager } from '../../contexts/LocalStorage'
-
-const pulse = keyframes`
-  0% { transform: scale(1); }
-  60% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-`
+import grim from '../../assets/grim_ani.gif'
 
 const Wrapper = styled.div`
   pointer-events: none;
@@ -26,21 +21,13 @@ const Wrapper = styled.div`
         `}
 `
 
-const AnimatedImg = styled.div`
-  animation: ${pulse} 800ms linear infinite;
-  & > * {
-    width: 72px;
-  }
-`
 
 const LocalLoader = ({ fill }) => {
   const [darkMode] = useDarkModeManager()
 
   return (
     <Wrapper fill={fill}>
-      <AnimatedImg>
-        <img src={require(darkMode ? '../../assets/logo_white.svg' : '../../assets/logo.svg')} alt="loading-icon" />
-      </AnimatedImg>
+      <img style={{ width: '300px' }} src={grim} alt="loading-icon" />
     </Wrapper>
   )
 }

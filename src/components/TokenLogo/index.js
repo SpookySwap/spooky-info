@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { isAddress } from '../../utils/index.js'
 import EthereumLogo from '../../assets/eth.png'
+import defaultTokenList from '../../constants/token/spookyswap.json'
 
 const BAD_IMAGES = {}
 
@@ -14,8 +15,7 @@ const Inline = styled.div`
 const Image = styled.img`
   width: ${({ size }) => size};
   height: ${({ size }) => size};
-  background-color: white;
-  border-radius: 50%;
+
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.075);
 `
 
@@ -41,7 +41,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     return (
       <Inline>
         <span {...rest} alt={''} style={{ fontSize: size }} role="img" aria-label="face">
-          🤔
+          ?
         </span>
       </Inline>
     )
@@ -75,12 +75,14 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address
   )}/logo.png`
 
+  const localpath = defaultTokenList.tokens.filter((a) => a.address === isAddress(address))
+
   return (
     <Inline>
       <Image
         {...rest}
         alt={''}
-        src={path}
+        src={localpath[0] ? localpath[0].logoURI : ''}
         size={size}
         onError={(event) => {
           BAD_IMAGES[address] = true
