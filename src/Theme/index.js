@@ -14,65 +14,65 @@ const theme = (darkMode, color) => ({
   customColor: color,
   textColor: darkMode ? color : 'black',
 
-  panelColor: darkMode ? 'rgba(255, 255, 255, 0)' : 'rgba(255, 255, 255, 0)',
-  backgroundColor: darkMode ? '#212429' : '#F7F8FA',
+  panelColor: darkMode ? '#121122' : '#F2F4F8',
+  backgroundColor: darkMode ? '#121122' : '#F2F4F8',
 
-  uniswapPink: darkMode ? '#ff007a' : 'black',
+  uniswapPink: darkMode ? '#51C0E1' : '#31415E',
 
-  concreteGray: darkMode ? '#292C2F' : '#FAFAFA',
-  inputBackground: darkMode ? '#1F1F1F' : '#FAFAFA',
-  shadowColor: darkMode ? '#000' : '#2F80ED',
-  mercuryGray: darkMode ? '#333333' : '#E1E1E1',
+  concreteGray: darkMode ? '#29C22F' : '#F2F4F8',
+  inputBackground: darkMode ? '#121122' : '#E4E9F1',
+  shadowColor: darkMode ? '#121122' : '#8C8CE3',
+  mercuryGray: darkMode ? '#121122' : '#BCC8DC',
 
-  text1: darkMode ? '#FAFAFA' : '#1F1F1F',
-  text2: darkMode ? '#C3C5CB' : '#565A69',
-  text3: darkMode ? '#6C7284' : '#888D9B',
-  text4: darkMode ? '#565A69' : '#C3C5CB',
-  text5: darkMode ? '#2C2F36' : '#EDEEF2',
+  text1: darkMode ? 'rgba(255, 255, 255, 0.87)' : '#1F1F1F',
+  text2: darkMode ? 'rgba(255, 255, 255, 0.87)' : '#565A69',
+  text3: darkMode ? 'rgba(255, 255, 255, 0.6)' : '#888D9B',
+  text4: darkMode ? 'rgba(255, 255, 255, 0.38)' : '#BCC8DC',
+  text5: darkMode ? 'rgba(255, 255, 255, 0.38)' : '#D7DEEA',
 
   // special case text types
   white: '#FFFFFF',
 
   // backgrounds / greys
-  bg1: darkMode ? '#212429' : '#FAFAFA',
-  bg2: darkMode ? '#2C2F36' : '#F7F8FA',
-  bg3: darkMode ? '#40444F' : '#EDEEF2',
-  bg4: darkMode ? '#565A69' : '#CED0D9',
-  bg5: darkMode ? '#565A69' : '#888D9B',
-  bg6: darkMode ? '#000' : '#FFFFFF',
+  bg1: darkMode ? '#121122' : '#F2F4F8',
+  bg2: darkMode ? 'rgba(255, 255, 255, 0.05)' : '#E4E9F1',
+  bg3: darkMode ? 'rgba(255, 255, 255, 0.09)' : '#D7DEEA',
+  bg4: darkMode ? 'rgba(255, 255, 255, 0.12)' : '#BCC8DC',
+  bg5: darkMode ? 'rgba(255, 255, 255, 0.14)' : '#A1B2CE',
+  bg6: darkMode ? '#121122' : '#FFFFFF',
 
   //specialty colors
-  modalBG: darkMode ? 'rgba(0,0,0,0.85)' : 'rgba(0,0,0,0.6)',
-  advancedBG: darkMode ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.4)',
-  onlyLight: darkMode ? '#22242a' : 'transparent',
-  divider: darkMode ? 'rgba(43, 43, 43, 0.435)' : 'rgba(43, 43, 43, 0.035)',
+  modalBG: darkMode ? 'rgba(18, 17, 34, 0.75)' : 'rgba(18, 17, 34, 0.6)',
+  advancedBG: darkMode ? 'rgba(255, 255, 255, 0.12)' : 'rgba(255, 255, 255, 0.4)',
+  onlyLight: darkMode ? '#121122' : 'transparent',
+  divider: darkMode ? '#4A4C70' : 'rgba(49, 65, 94, 0.4)',
 
   //primary colors
-  primary1: darkMode ? '#2172E5' : '#ff007a',
-  primary2: darkMode ? '#3680E7' : '#FF8CC3',
-  primary3: darkMode ? '#4D8FEA' : '#FF99C9',
-  primary4: darkMode ? '#376bad70' : '#F6DDE8',
-  primary5: darkMode ? '#153d6f70' : '#FDEAF1',
+  primary1: darkMode ? '#6665DD' : '#6665DD',
+  primary2: darkMode ? '#8C8CE3' : '#8C8CE3',
+  primary3: darkMode ? '#ADADEB' : '#ADADEB',
+  primary4: darkMode ? '#2C2CB5' : '#2C2CB5',
+  primary5: darkMode ? '#242494' : '#242494',
 
   // color text
-  primaryText1: darkMode ? '#6da8ff' : '#ff007a',
+  primaryText1: darkMode ? '#6665DD' : '#6665DD',
 
   // secondary colors
-  secondary1: darkMode ? '#2172E5' : '#ff007a',
-  secondary2: darkMode ? '#17000b26' : '#F6DDE8',
-  secondary3: darkMode ? '#17000b26' : '#FDEAF1',
+  secondary1: darkMode ? '#51C0E1' : '#73CCE7',
+  secondary2: darkMode ? '#73CCE7' : '#BAE6F3',
+  secondary3: darkMode ? '#96D9ED' : '#DCF2F9',
 
-  shadow1: darkMode ? '#000' : '#2F80ED',
+  shadow1: darkMode ? '#DCF2F9' : '#31415E',
 
   // other
-  red1: '#FF6871',
-  green1: '#27AE60',
-  yellow1: '#FFE270',
-  yellow2: '#F3841E',
-  link: '#2172E5',
-  blue: '2f80ed',
+  red1: '#FF6978',
+  green1: '#CFD784',
+  yellow1: '#FFE600',
+  yellow2: '#FFA770',
+  link: '#8C8CE3',
+  blue: '#73CCE7',
 
-  background: darkMode ? 'black' : `radial-gradient(50% 50% at 50% 50%, #ff007a30 0%, #fff 0%)`,
+  background: darkMode ? 'radial-gradient(135.95% 135.95% at 50% -35.95%, rgba(102, 102, 255, 0.5) 0%, rgba(18, 17, 34, 0) 100%)' : "#F2F4F8",
 })
 
 const TextWrapper = styled(Text)`

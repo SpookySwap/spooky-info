@@ -288,7 +288,7 @@ function TxnList({ transactions, symbol0Override, symbol1Override, color }) {
           </Link>
         </DataText>
         <DataText area="value">
-          {currency === 'ETH' ? 'Ξ ' + formattedNum(item.valueETH) : formattedNum(item.amountUSD, true)}
+          {currency === 'FTM' ? 'FTM ' + formattedNum(item.valueETH) : formattedNum(item.amountUSD, true)}
         </DataText>
         {!below780 && (
           <>
@@ -304,7 +304,7 @@ function TxnList({ transactions, symbol0Override, symbol1Override, color }) {
         )}
         {!below1080 && (
           <DataText area="account">
-            <Link color={color} external href={'https://etherscan.io/address/' + item.account}>
+            <Link color={color} external href={'https://ftmscan.com/address/' + item.account}>
               {item.account && item.account.slice(0, 6) + '...' + item.account.slice(38, 42)}
             </Link>
           </DataText>

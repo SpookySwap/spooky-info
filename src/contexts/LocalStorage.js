@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useReducer, useMemo, useCallback, useEffect } from 'react'
 
-const UNISWAP = 'UNISWAP'
+const UNISWAP = 'SPOOKYSWAP'
 
 const VERSION = 'VERSION'
 const CURRENT_VERSION = 0

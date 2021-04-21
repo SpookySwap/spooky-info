@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   z-index: 9999;
   box-sizing: border-box;
   /* background-color: #1b1c22; */
-  background: linear-gradient(193.68deg, #1b1c22 0.68%, #000000 100.48%);
+  background: linear-gradient(132.25deg, #2A2A48 6.56%, #2C394A 100%);
   color: ${({ theme }) => theme.bg2};
 
   @media screen and (max-width: 800px) {
@@ -164,27 +164,27 @@ function SideNav({ history }) {
           </AutoColumn>
           <AutoColumn gap="0.5rem" style={{ marginLeft: '.75rem', marginBottom: '4rem' }}>
             <HeaderText>
-              <Link href="https://uniswap.org" target="_blank">
-                Uniswap.org
+              <Link href="https://spookyswap.finance" target="_blank">
+                Homepage
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://v1.uniswap.info" target="_blank">
-                V1 Analytics
+              <Link href="https://github.com/spookyswap" target="_blank">
+                Github
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://uniswap.org/docs/v2" target="_blank">
+              <Link href="https://docs.spookyswap.finance" target="_blank">
                 Docs
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://discord.com/invite/FCfyBSbCU5" target="_blank">
+              <Link href="https://discord.gg/weXbvPAH4Q" target="_blank">
                 Discord
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://twitter.com/UniswapProtocol" target="_blank">
+              <Link href="https://twitter.com/SpookySwap" target="_blank">
                 Twitter
               </Link>
             </HeaderText>
