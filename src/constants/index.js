@@ -20,6 +20,13 @@ export const SUPPORTED_LIST_URLS__NO_ENS = [
 export const TOKEN_BLACKLIST = [
   '0xdea0102f2d45a944a720a1cdef87ec8366ea04f5',
   '0x3c393ed453c1017315d4401f6097ea4b944c06ac',
+  '0x6e0aa9718c56ef5d19ccf57955284c7cd95737be',
+  '0x4c89b40ea5408786e158b60c2711c8d28e7ad32d',
+  '0xe4ef5a727ef598722bddc8c6ec33a31258d6a42f',
+  '0xfd3b077dc97915ab3a49db1b1021c13ad55751dc',
+  '0x0bbf5349d884d135a907040187e0f4e04d05129c',
+  '0x3d5f8fb7e5de6bf2c1944d24c94ef48b84ad13c6',
+
 ]
 
 // pair blacklist
