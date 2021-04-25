@@ -40,7 +40,7 @@
     {
       "name": "SpookySwap",
       "symbol": "BOO",
-      "address": "0x6E0aA9718C56Ef5d19ccf57955284C7CD95737be",
+      "address": "0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE",
       "chainId": 250,
       "decimals": 18,
       "logoURI": "http://spookyswap.finance/images/tokens/BOO.png"
