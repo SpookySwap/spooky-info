@@ -74,6 +74,14 @@ export default function Title() {
               </Option>
             </BasicLink>
 
+
+          </RowFixed>
+        )}
+      </Flex>
+    </TitleWrapper>
+  )
+}
+/*
             <BasicLink to="/accounts">
               <Option
                 activeText={
@@ -85,9 +93,4 @@ export default function Title() {
                 Accounts
               </Option>
             </BasicLink>
-          </RowFixed>
-        )}
-      </Flex>
-    </TitleWrapper>
-  )
-}
+            */
