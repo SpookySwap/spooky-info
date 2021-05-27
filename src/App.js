@@ -93,7 +93,7 @@ const LayoutWrapper = ({ children, savedOpen, setSavedOpen }) => {
   )
 }
 
-const BLOCK_DIFFERENCE_THRESHOLD = 30
+const BLOCK_DIFFERENCE_THRESHOLD = 300
 
 function App() {
   const [savedOpen, setSavedOpen] = useState(false)
