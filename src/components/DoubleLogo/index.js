@@ -21,6 +21,7 @@ export default function DoubleTokenLogo({ a0, a1, size = 24, margin = false }) {
     left: ${({ sizeraw }) => (sizeraw / 2).toString() + 'px'};
     // background-color: white;
     border-radius: 50%;
+    margin-left: 8px;
   `
 
   return (
