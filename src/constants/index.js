@@ -26,6 +26,7 @@ export const TOKEN_BLACKLIST = [
   '0xfd3b077dc97915ab3a49db1b1021c13ad55751dc',
   '0x0bbf5349d884d135a907040187e0f4e04d05129c',
   '0x3d5f8fb7e5de6bf2c1944d24c94ef48b84ad13c6',
+  '0x556ae63bfb80c608589a5c78b456b2fa9145a0a3'
 
 ]
 

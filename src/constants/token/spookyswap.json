@@ -8,7 +8,10 @@
   },
   "tags": {},
   "logoURI": "http://assets.spookyswap.finance/tokens/BOO.png",
-  "keywords": ["spookyswap", "default"],
+  "keywords": [
+    "spookyswap",
+    "default"
+  ],
   "tokens": [
     {
       "name": "Aave",
@@ -201,6 +204,14 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/anyswap/Brand-assets/master/logo/c-128-color-2.png"
+    },
+    {
+      "name": "Beefy.Finance",
+      "symbol": "BIFI",
+      "address": "0xd6070ae98b8069de6B494332d1A1a81B6179D960",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/12704/large/token.png"
     }
   ]
 }
