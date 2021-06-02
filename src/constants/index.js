@@ -26,12 +26,15 @@ export const TOKEN_BLACKLIST = [
   '0xfd3b077dc97915ab3a49db1b1021c13ad55751dc',
   '0x0bbf5349d884d135a907040187e0f4e04d05129c',
   '0x3d5f8fb7e5de6bf2c1944d24c94ef48b84ad13c6',
-  '0x556ae63bfb80c608589a5c78b456b2fa9145a0a3'
+  '0x556ae63bfb80c608589a5c78b456b2fa9145a0a3',
+  '0xf3a61c7d53442ac00a3a99761c5839f9109f2193',
+  '0x7df4eaa13fba3aa7ec3b77b412566e5204e1539a'
 
 ]
 
 // pair blacklist
 export const PAIR_BLACKLIST = [
+  '0x8c1c4da6754cfbc37e09620ef2774fe59e7bba88'
 ]
 
 // warnings to display if page contains info about blocked token

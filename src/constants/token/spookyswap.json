@@ -212,6 +212,22 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/12704/large/token.png"
+    },
+    {
+      "name": "TOMB",
+      "symbol": "TOMB",
+      "address": "0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://tomb.finance/presskit/crypto_tomb_cash_NoBG.png"
+    },
+    {
+      "name": "TSHARE",
+      "symbol": "TSHARE",
+      "address": "0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://tomb.finance/presskit/crypto_tomb_share_NoBG.png"
     }
   ]
 }
