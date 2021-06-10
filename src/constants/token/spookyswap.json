@@ -8,10 +8,7 @@
   },
   "tags": {},
   "logoURI": "http://assets.spookyswap.finance/tokens/BOO.png",
-  "keywords": [
-    "spookyswap",
-    "default"
-  ],
+  "keywords": ["spookyswap", "default"],
   "tokens": [
     {
       "name": "Aave",
@@ -84,6 +81,14 @@
       "chainId": 250,
       "decimals": 6,
       "logoURI": "https://assets.coingecko.com/coins/images/325/large/Tether-logo.png"
+    },
+    {
+      "name": "Graviton",
+      "symbol": "GTON",
+      "address": "0xC1Be9a4D5D45BeeACAE296a7BD5fADBfc14602C4",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/GTON.png"
     },
     {
       "name": "IceToken",
@@ -228,6 +233,22 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://tomb.finance/presskit/crypto_tomb_share_NoBG.png"
+    },
+    {
+      "name": "BOMB",
+      "symbol": "BOMB",
+      "address": "0x8503eb4a136bdbeb323e37aa6e0fa0c772228378",
+      "chainId": 250,
+      "decimals": 0,
+      "logoURI": "https://fbomb.finance/assets/logo-blue.png"
+    },
+    {
+      "name": "BooLand",
+      "symbol": "xBOO",
+      "address": "0xe746C5BC9BE9562799eac1d2281e0A3F68DA94c4",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/xBOO.png"
     }
   ]
 }
