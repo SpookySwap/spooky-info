@@ -8,7 +8,10 @@
   },
   "tags": {},
   "logoURI": "http://assets.spookyswap.finance/tokens/BOO.png",
-  "keywords": ["spookyswap", "default"],
+  "keywords": [
+    "spookyswap",
+    "default"
+  ],
   "tokens": [
     {
       "name": "Aave",
@@ -224,7 +227,7 @@
       "address": "0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7",
       "chainId": 250,
       "decimals": 18,
-      "logoURI": "https://tomb.finance/presskit/crypto_tomb_cash_NoBG.png"
+      "logoURI": "https://assets.spookyswap.finance/tokens/TOMB.png"
     },
     {
       "name": "TSHARE",
@@ -232,7 +235,7 @@
       "address": "0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37",
       "chainId": 250,
       "decimals": 18,
-      "logoURI": "https://tomb.finance/presskit/crypto_tomb_share_NoBG.png"
+      "logoURI": "https://assets.spookyswap.finance/tokens/TOMB.png"
     },
     {
       "name": "BOMB",
@@ -245,7 +248,7 @@
     {
       "name": "Boo MirrorWorld",
       "symbol": "xBOO",
-      "address": "0xe746C5BC9BE9562799eac1d2281e0A3F68DA94c4",
+      "address": "0xa48d959AE2E88f1dAA7D5F611E01908106dE7598",
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/xBOO.png"
