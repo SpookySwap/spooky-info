@@ -240,10 +240,10 @@
     {
       "name": "BOMB",
       "symbol": "BOMB",
-      "address": "0x8503eb4a136bdbeb323e37aa6e0fa0c772228378",
+      "address": "0x8503eb4A136bDBeB323E37Aa6e0FA0C772228378",
       "chainId": 250,
       "decimals": 0,
-      "logoURI": "https://fbomb.finance/assets/logo-blue.png"
+      "logoURI": "https://assets.spookyswap.finance/tokens/BOMB.png"
     },
     {
       "name": "Boo MirrorWorld",
@@ -252,6 +252,14 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/xBOO.png"
+    },
+    {
+      "name": "Smart Token",
+      "symbol": "SMART",
+      "address": "0x34D33dc8Ac6f1650D94A7E9A972B47044217600b",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/SMART.png"
     }
   ]
 }
