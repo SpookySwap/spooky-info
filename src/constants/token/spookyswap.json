@@ -260,6 +260,14 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/SMART.png"
+    },
+    {
+      "name": "aUSD",
+      "symbol": "aUSD",
+      "address": "0x41e3dF7f716aB5AF28c1497B354D79342923196a",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://aquarius.fi/assets/200/AUSD200-t.png"
     }
   ]
 }
