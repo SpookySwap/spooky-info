@@ -284,6 +284,14 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/16786/large/mimlogopng.png"
+    },
+    {
+      "name": "ShadeToken",
+      "symbol": "SHADE",
+      "address": "0x3A3841f5fa9f2c283EA567d5Aeea3Af022dD2262",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/SHADE.png"
     }
   ]
 }
