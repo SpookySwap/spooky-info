@@ -292,6 +292,14 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/SHADE.png"
+    },
+    {
+      "name": "AtariToken",
+      "symbol": "ATRI",
+      "address": "0x818ec0A7Fe18Ff94269904fCED6AE3DaE6d6dC0b",
+      "chainId": 250,
+      "decimals": 0,
+      "logoURI": "https://assets.coingecko.com/coins/images/12992/large/atari.png"
     }
   ]
 }
