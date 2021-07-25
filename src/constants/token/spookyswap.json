@@ -308,6 +308,14 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/KEK.png"
+    },
+    {
+      "name": "YEL Token",
+      "symbol": "YEL",
+      "address": "0xD3b71117E6C1558c1553305b44988cd944e97300",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/YEL.png"
     }
   ]
 }
