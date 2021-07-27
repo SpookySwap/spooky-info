@@ -316,6 +316,14 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/YEL.png"
+    },
+    {
+      "name": "iFUSD",
+      "symbol": "iFUSD",
+      "address": "0x9fC071cE771c7B27b7d9A57C32c0a84c18200F8a",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/iFUSD.png"
     }
   ]
 }
