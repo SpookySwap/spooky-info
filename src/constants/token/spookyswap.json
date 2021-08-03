@@ -331,9 +331,7 @@
       "address": "0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475",
       "chainId": 250,
       "decimals": 18,
-      "logoURI": "https://assets.spookyswap.finance/tokens/SCREAM.png",
-      "bridgeId": "",
-      "nativeChain": ""
+      "logoURI": "https://assets.spookyswap.finance/tokens/SCREAM.png"
     }
   ]
 }
