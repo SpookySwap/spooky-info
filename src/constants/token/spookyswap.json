@@ -332,6 +332,14 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/SCREAM.png"
+    },
+    {
+      "name": "Tarot",
+      "symbol": "TAROT",
+      "address": "0xC5e2B037D30a390e62180970B3aa4E91868764cD",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/TAROT.png"
     }
   ]
 }
