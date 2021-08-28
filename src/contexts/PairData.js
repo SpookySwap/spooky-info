@@ -614,10 +614,9 @@ export function usePairData(pairAddress) {
 export function usePairTransactions(pairAddress) {
   const [state, { updatePairTxns }] = usePairDataContext()
   const pairTxns = state?.[pairAddress]?.txns
-  const [lastQ, setLastQ] = useState(1630112736)
+  const [lastQ, setLastQ] = useState(0)
   useEffect(() => {
     const interval = setInterval(async () => {
-      console.log(lastQ)
       let transactions = await getPairTransactions(pairAddress, lastQ.toString())
       updatePairTxns(pairAddress, transactions)
       setLastQ(Math.floor(Date.now() / 1000))
