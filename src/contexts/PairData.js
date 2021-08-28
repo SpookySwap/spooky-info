@@ -39,9 +39,9 @@ dayjs.extend(utc)
 export function safeAccess(object, path) {
   return object
     ? path.reduce(
-        (accumulator, currentValue) => (accumulator && accumulator[currentValue] ? accumulator[currentValue] : null),
-        object
-      )
+      (accumulator, currentValue) => (accumulator && accumulator[currentValue] ? accumulator[currentValue] : null),
+      object
+    )
     : null
 }
 
@@ -78,11 +78,17 @@ function reducer(state, { type, payload }) {
 
     case UPDATE_PAIR_TXNS: {
       const { address, transactions } = payload
+      const txns = safeAccess(state, [address]).txns
+      const mints = txns?.mints || []
+      const swaps = txns?.swaps || []
+      const burns = txns?.burns || []
       return {
         ...state,
         [address]: {
           ...(safeAccess(state, [address]) || {}),
-          txns: transactions,
+          txns: {mints: mints.concat(transactions.mints), 
+            swaps: swaps.concat(transactions.swaps),
+          burns: burns.concat(transactions.burns)},
         },
       }
     }
@@ -219,35 +225,35 @@ async function getBulkPairData(pairList, ethPrice) {
 
     let pairData = await Promise.all(
       current &&
-        current.data.pairs.map(async (pair) => {
-          let data = pair
-          let oneDayHistory = oneDayData?.[pair.id]
-          if (!oneDayHistory) {
-            let newData = await client.query({
-              query: PAIR_DATA(pair.id, b1),
-              fetchPolicy: 'cache-first',
-            })
-            oneDayHistory = newData.data.pairs[0]
-          }
-          let twoDayHistory = twoDayData?.[pair.id]
-          if (!twoDayHistory) {
-            let newData = await client.query({
-              query: PAIR_DATA(pair.id, b2),
-              fetchPolicy: 'cache-first',
-            })
-            twoDayHistory = newData.data.pairs[0]
-          }
-          let oneWeekHistory = oneWeekData?.[pair.id]
-          if (!oneWeekHistory) {
-            let newData = await client.query({
-              query: PAIR_DATA(pair.id, bWeek),
-              fetchPolicy: 'cache-first',
-            })
-            oneWeekHistory = newData.data.pairs[0]
-          }
-          data = parseData(data, oneDayHistory, twoDayHistory, oneWeekHistory, ethPrice, b1)
-          return data
-        })
+      current.data.pairs.map(async (pair) => {
+        let data = pair
+        let oneDayHistory = oneDayData?.[pair.id]
+        if (!oneDayHistory) {
+          let newData = await client.query({
+            query: PAIR_DATA(pair.id, b1),
+            fetchPolicy: 'cache-first',
+          })
+          oneDayHistory = newData.data.pairs[0]
+        }
+        let twoDayHistory = twoDayData?.[pair.id]
+        if (!twoDayHistory) {
+          let newData = await client.query({
+            query: PAIR_DATA(pair.id, b2),
+            fetchPolicy: 'cache-first',
+          })
+          twoDayHistory = newData.data.pairs[0]
+        }
+        let oneWeekHistory = oneWeekData?.[pair.id]
+        if (!oneWeekHistory) {
+          let newData = await client.query({
+            query: PAIR_DATA(pair.id, bWeek),
+            fetchPolicy: 'cache-first',
+          })
+          oneWeekHistory = newData.data.pairs[0]
+        }
+        data = parseData(data, oneDayHistory, twoDayHistory, oneWeekHistory, ethPrice, b1)
+        return data
+      })
     )
     return pairData
   } catch (e) {
@@ -312,7 +318,7 @@ function parseData(data, oneDayData, twoDayData, oneWeekData, ethPrice, oneDayBl
   return data
 }
 
-const getPairTransactions = async (pairAddress) => {
+const getPairTransactions = async (pairAddress, lastQ) => {
   const transactions = {}
 
   try {
@@ -320,6 +326,7 @@ const getPairTransactions = async (pairAddress) => {
       query: FILTERED_TRANSACTIONS,
       variables: {
         allPairs: [pairAddress],
+        lastQ: lastQ,
       },
       fetchPolicy: 'no-cache',
     })
@@ -607,14 +614,15 @@ export function usePairData(pairAddress) {
 export function usePairTransactions(pairAddress) {
   const [state, { updatePairTxns }] = usePairDataContext()
   const pairTxns = state?.[pairAddress]?.txns
+  const [lastQ, setLastQ] = useState(1630112736)
   useEffect(() => {
-    async function checkForTxns() {
-      if (!pairTxns) {
-        let transactions = await getPairTransactions(pairAddress)
-        updatePairTxns(pairAddress, transactions)
-      }
-    }
-    checkForTxns()
+    const interval = setInterval(async () => {
+      console.log(lastQ)
+      let transactions = await getPairTransactions(pairAddress, lastQ.toString())
+      updatePairTxns(pairAddress, transactions)
+      setLastQ(Math.floor(Date.now() / 1000))
+    }, 6000)
+    return () => clearInterval(interval)
   }, [pairTxns, pairAddress, updatePairTxns])
   return pairTxns
 }
