@@ -348,6 +348,58 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/BABYBOO.png"
+    },
+    {
+      "name": "Death",
+      "symbol": "Death",
+      "address": "0xeaF45B62d9d0Bdc1D763baF306af5eDD7C0d7e55",
+      "chainId": 250,
+      "decimals": 9,
+      "logoURI": "https://assets.spookyswap.finance/tokens/DEATH.png"
+    },
+    {
+      "name": "The Eye of Truth",
+      "symbol": "EYE",
+      "address": "0x496e1693A7B162c4f0Cd6a1792679cC48EcbCC8d",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/EYE.png"
+    },
+    {
+      "name": "Munny",
+      "symbol": "MUNNY",
+      "address": "0x195FE0c899434fB47Cd6c1A09ba9DA56A1Cca12C",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/MUNNY.png",
+      "bridgeId": "",
+      "nativeChain": ""
+    },
+    {
+      "name": "PenniToken",
+      "symbol": "PENNI",
+      "address": "0x47d0d625638b56084e76b8720475d175d171af9A",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/PENNI.png",
+      "bridgeId": "",
+      "nativeChain": ""
+    },
+    {
+      "name": "Fantums of Opera Token",
+      "symbol": "FOO",
+      "address": "0xFbc3c04845162F067A0B6F8934383E63899c3524",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/FOO.png"
+    },
+    {
+      "name": "SteakToken",
+      "symbol": "STEAK",
+      "address": "0x05848B832E872d9eDd84AC5718D58f21fD9c9649",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/STEAK.png"
     }
   ]
 }
