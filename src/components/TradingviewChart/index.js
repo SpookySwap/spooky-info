@@ -40,6 +40,17 @@ const TradingViewChart = ({
   const [chartCreated, setChartCreated] = useState(false)
   const dataPrev = usePrevious(data)
 
+  useEffect(() => {
+    if (data !== dataPrev && chartCreated && type === CHART_TYPES.BAR) {
+      // remove the tooltip element
+      let tooltip = document.getElementById('tooltip-id' + type)
+      let node = document.getElementById('test-id' + type)
+      node.removeChild(tooltip)
+      chartCreated.resize(0, 0)
+      setChartCreated()
+    }
+  }, [chartCreated, data, dataPrev, type])
+
   // parese the data and format for tardingview consumption
   const formattedData = data?.map((entry) => {
     return {
@@ -54,18 +65,6 @@ const TradingViewChart = ({
   const [darkMode] = useDarkModeManager()
   const textColor = darkMode ? 'white' : 'black'
   const previousTheme = usePrevious(darkMode)
-
-  // reset the chart if them switches
-  useEffect(() => {
-    if (chartCreated && previousTheme !== darkMode) {
-      // remove the tooltip element
-      let tooltip = document.getElementById('tooltip-id' + type)
-      let node = document.getElementById('test-id' + type)
-      node.removeChild(tooltip)
-      chartCreated.resize(0, 0)
-      setChartCreated()
-    }
-  }, [chartCreated, darkMode, previousTheme, type])
 
   // if no chart created yet, create one with options and add to DOM manually
   useEffect(() => {
