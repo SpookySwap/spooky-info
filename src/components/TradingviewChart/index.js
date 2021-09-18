@@ -40,17 +40,6 @@ const TradingViewChart = ({
   const [chartCreated, setChartCreated] = useState(false)
   const dataPrev = usePrevious(data)
 
-  useEffect(() => {
-    if (data !== dataPrev && chartCreated && type === CHART_TYPES.BAR) {
-      // remove the tooltip element
-      let tooltip = document.getElementById('tooltip-id' + type)
-      let node = document.getElementById('test-id' + type)
-      node.removeChild(tooltip)
-      chartCreated.resize(0, 0)
-      setChartCreated()
-    }
-  }, [chartCreated, data, dataPrev, type])
-
   // parese the data and format for tardingview consumption
   const formattedData = data?.map((entry) => {
     return {
