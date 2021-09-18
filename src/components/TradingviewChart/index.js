@@ -66,6 +66,18 @@ const TradingViewChart = ({
   const textColor = darkMode ? 'white' : 'black'
   const previousTheme = usePrevious(darkMode)
 
+  // reset the chart if them switches
+  useEffect(() => {
+    if (chartCreated && previousTheme !== darkMode) {
+      // remove the tooltip element
+      let tooltip = document.getElementById('tooltip-id' + type)
+      let node = document.getElementById('test-id' + type)
+      node.removeChild(tooltip)
+      chartCreated.resize(0, 0)
+      setChartCreated()
+    }
+  }, [chartCreated, darkMode, previousTheme, type])
+
   // if no chart created yet, create one with options and add to DOM manually
   useEffect(() => {
     if (!chartCreated && formattedData) {
@@ -117,23 +129,23 @@ const TradingViewChart = ({
       var series =
         type === CHART_TYPES.BAR
           ? chart.addHistogramSeries({
-            color: '#51C0E1',
-            priceFormat: {
-              type: 'volume',
-            },
-            scaleMargins: {
-              top: 0.32,
-              bottom: 0,
-            },
-            lineColor: '#51C0E1',
-            lineWidth: 3,
-          })
+              color: '#51C0E1',
+              priceFormat: {
+                type: 'volume',
+              },
+              scaleMargins: {
+                top: 0.32,
+                bottom: 0,
+              },
+              lineColor: '#51C0E1',
+              lineWidth: 3,
+            })
           : chart.addAreaSeries({
-            topColor: 'rgba(81,192,225,1)',
-            bottomColor: 'rgba(81,192,225,0)',
-            lineColor: '#51C0E1',
-            lineWidth: 3,
-          })
+              topColor: 'rgba(81,192,225,1)',
+              bottomColor: 'rgba(81,192,225,0)',
+              lineColor: '#51C0E1',
+              lineWidth: 3,
+            })
 
       series.setData(formattedData)
       var toolTip = document.createElement('div')
@@ -154,7 +166,8 @@ const TradingViewChart = ({
       // get the title of the chart
       function setLastBarText() {
         toolTip.innerHTML =
-          `<div style="font-size: 16px; margin: 4px 0px; color: ${textColor};">${title} ${type === CHART_TYPES.BAR && !useWeekly ? '(24hr)' : ''
+          `<div style="font-size: 16px; margin: 4px 0px; color: ${textColor};">${title} ${
+            type === CHART_TYPES.BAR && !useWeekly ? '(24hr)' : ''
           }</div>` +
           `<div style="font-size: 22px; margin: 4px 0px; color:${textColor}" >` +
           formattedNum(base ?? 0, true) +
@@ -177,12 +190,12 @@ const TradingViewChart = ({
         } else {
           let dateStr = useWeekly
             ? dayjs(param.time.year + '-' + param.time.month + '-' + param.time.day)
-              .startOf('week')
-              .format('MMMM D, YYYY') +
-            '-' +
-            dayjs(param.time.year + '-' + param.time.month + '-' + param.time.day)
-              .endOf('week')
-              .format('MMMM D, YYYY')
+                .startOf('week')
+                .format('MMMM D, YYYY') +
+              '-' +
+              dayjs(param.time.year + '-' + param.time.month + '-' + param.time.day)
+                .endOf('week')
+                .format('MMMM D, YYYY')
             : dayjs(param.time.year + '-' + param.time.month + '-' + param.time.day).format('MMMM D, YYYY')
           var price = param.seriesPrices.get(series)
 
@@ -216,9 +229,10 @@ const TradingViewChart = ({
     width,
   ])
 
+  const widthPrev = usePrevious(width)
   // responsiveness
   useEffect(() => {
-    if (width) {
+    if (width !== widthPrev) {
       chartCreated && chartCreated.resize(width, HEIGHT)
       chartCreated && chartCreated.timeScale().scrollToPosition(0)
     }
