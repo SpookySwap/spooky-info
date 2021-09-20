@@ -400,6 +400,70 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/STEAK.png"
+    },
+    {
+      "name": "Totem Finance",
+      "symbol": "TOTEM",
+      "address": "0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/TOTEM.png"
+    },
+    {
+      "name": "OliveCash Token",
+      "symbol": "fOLIVE",
+      "address": "0xA9937092c4E2B0277C16802Cc8778D252854688A",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/OLIVE.png"
+    },
+    {
+      "name": "Syfin",
+      "symbol": "SYF",
+      "address": "0x1BCF4DC879979C68fA255f731FE8Dcf71970c9bC",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/SYF.png"
+    },
+    {
+      "name": "FTM1337",
+      "symbol": "ELITE",
+      "address": "0xf43Cc235E686d7BC513F53Fbffb61F760c3a1882",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/ELITE.png"
+    },
+    {
+      "name": "Fantom Oasis Token",
+      "symbol": "FTMO",
+      "address": "0x9bD0611610A0f5133e4dd1bFdd71C5479Ee77f37",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/FTMO.png"
+    },
+    {
+      "name": "Wootrade Network",
+      "symbol": "WOO",
+      "address": "0x6626c47c00F1D87902fc13EECfaC3ed06D5E8D8a",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/WOO.png"
+    },
+    {
+      "name": "fSWAMP Token",
+      "symbol": "fSWAMP",
+      "address": "0x23cBC7C95a13071562af2C4Fb1Efa7a284d0543a",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/fSWAMP.png"
+    },
+    {
+      "name": "Treeb",
+      "symbol": "TREEB",
+      "address": "0xc60D7067dfBc6f2caf30523a064f416A5Af52963",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/TREEB.png"
     }
   ]
 }
