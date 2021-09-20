@@ -40,6 +40,17 @@ const TradingViewChart = ({
   const [chartCreated, setChartCreated] = useState(false)
   const dataPrev = usePrevious(data)
 
+  useEffect(() => {
+    if (data !== dataPrev && chartCreated && type === CHART_TYPES.BAR) {
+      // remove the tooltip element
+      let tooltip = document.getElementById('tooltip-id' + type)
+      let node = document.getElementById('test-id' + type)
+      node.removeChild(tooltip)
+      chartCreated.resize(0, 0)
+      setChartCreated()
+    }
+  }, [chartCreated, data, dataPrev, type])
+
   // parese the data and format for tardingview consumption
   const formattedData = data?.map((entry) => {
     return {
@@ -118,23 +129,23 @@ const TradingViewChart = ({
       var series =
         type === CHART_TYPES.BAR
           ? chart.addHistogramSeries({
-            color: '#51C0E1',
-            priceFormat: {
-              type: 'volume',
-            },
-            scaleMargins: {
-              top: 0.32,
-              bottom: 0,
-            },
-            lineColor: '#51C0E1',
-            lineWidth: 3,
-          })
+              color: '#51C0E1',
+              priceFormat: {
+                type: 'volume',
+              },
+              scaleMargins: {
+                top: 0.32,
+                bottom: 0,
+              },
+              lineColor: '#51C0E1',
+              lineWidth: 3,
+            })
           : chart.addAreaSeries({
-            topColor: 'rgba(81,192,225,1)',
-            bottomColor: 'rgba(81,192,225,0)',
-            lineColor: '#51C0E1',
-            lineWidth: 3,
-          })
+              topColor: 'rgba(81,192,225,1)',
+              bottomColor: 'rgba(81,192,225,0)',
+              lineColor: '#51C0E1',
+              lineWidth: 3,
+            })
 
       series.setData(formattedData)
       var toolTip = document.createElement('div')
@@ -155,7 +166,8 @@ const TradingViewChart = ({
       // get the title of the chart
       function setLastBarText() {
         toolTip.innerHTML =
-          `<div style="font-size: 16px; margin: 4px 0px; color: ${textColor};">${title} ${type === CHART_TYPES.BAR && !useWeekly ? '(24hr)' : ''
+          `<div style="font-size: 16px; margin: 4px 0px; color: ${textColor};">${title} ${
+            type === CHART_TYPES.BAR && !useWeekly ? '(24hr)' : ''
           }</div>` +
           `<div style="font-size: 22px; margin: 4px 0px; color:${textColor}" >` +
           formattedNum(base ?? 0, true) +
@@ -178,12 +190,12 @@ const TradingViewChart = ({
         } else {
           let dateStr = useWeekly
             ? dayjs(param.time.year + '-' + param.time.month + '-' + param.time.day)
-              .startOf('week')
-              .format('MMMM D, YYYY') +
-            '-' +
-            dayjs(param.time.year + '-' + param.time.month + '-' + param.time.day)
-              .endOf('week')
-              .format('MMMM D, YYYY')
+                .startOf('week')
+                .format('MMMM D, YYYY') +
+              '-' +
+              dayjs(param.time.year + '-' + param.time.month + '-' + param.time.day)
+                .endOf('week')
+                .format('MMMM D, YYYY')
             : dayjs(param.time.year + '-' + param.time.month + '-' + param.time.day).format('MMMM D, YYYY')
           var price = param.seriesPrices.get(series)
 
@@ -217,9 +229,10 @@ const TradingViewChart = ({
     width,
   ])
 
+  const widthPrev = usePrevious(width)
   // responsiveness
   useEffect(() => {
-    if (width) {
+    if (width !== widthPrev) {
       chartCreated && chartCreated.resize(width, HEIGHT)
       chartCreated && chartCreated.timeScale().scrollToPosition(0)
     }
