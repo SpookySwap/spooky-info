@@ -332,6 +332,138 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/SCREAM.png"
+    },
+    {
+      "name": "Tarot",
+      "symbol": "TAROT",
+      "address": "0xC5e2B037D30a390e62180970B3aa4E91868764cD",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/TAROT.png"
+    },
+    {
+      "name": "BABYBOO",
+      "symbol": "BABYBOO",
+      "address": "0x471762A7017A5B1A3e931F1A97aa03Ef1E7F4A73",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/BABYBOO.png"
+    },
+    {
+      "name": "Death",
+      "symbol": "Death",
+      "address": "0xeaF45B62d9d0Bdc1D763baF306af5eDD7C0d7e55",
+      "chainId": 250,
+      "decimals": 9,
+      "logoURI": "https://assets.spookyswap.finance/tokens/DEATH.png"
+    },
+    {
+      "name": "The Eye of Truth",
+      "symbol": "EYE",
+      "address": "0x496e1693A7B162c4f0Cd6a1792679cC48EcbCC8d",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/EYE.png"
+    },
+    {
+      "name": "Munny",
+      "symbol": "MUNNY",
+      "address": "0x195FE0c899434fB47Cd6c1A09ba9DA56A1Cca12C",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/MUNNY.png",
+      "bridgeId": "",
+      "nativeChain": ""
+    },
+    {
+      "name": "PenniToken",
+      "symbol": "PENNI",
+      "address": "0x47d0d625638b56084e76b8720475d175d171af9A",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/PENNI.png",
+      "bridgeId": "",
+      "nativeChain": ""
+    },
+    {
+      "name": "Fantums of Opera Token",
+      "symbol": "FOO",
+      "address": "0xFbc3c04845162F067A0B6F8934383E63899c3524",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/FOO.png"
+    },
+    {
+      "name": "SteakToken",
+      "symbol": "STEAK",
+      "address": "0x05848B832E872d9eDd84AC5718D58f21fD9c9649",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/STEAK.png"
+    },
+    {
+      "name": "Totem Finance",
+      "symbol": "TOTEM",
+      "address": "0x31a37aedC0C18AA139e120e1CDC673BbB2063e6f",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/TOTEM.png"
+    },
+    {
+      "name": "OliveCash Token",
+      "symbol": "fOLIVE",
+      "address": "0xA9937092c4E2B0277C16802Cc8778D252854688A",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/OLIVE.png"
+    },
+    {
+      "name": "Syfin",
+      "symbol": "SYF",
+      "address": "0x1BCF4DC879979C68fA255f731FE8Dcf71970c9bC",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/SYF.png"
+    },
+    {
+      "name": "FTM1337",
+      "symbol": "ELITE",
+      "address": "0xf43Cc235E686d7BC513F53Fbffb61F760c3a1882",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/ELITE.png"
+    },
+    {
+      "name": "Fantom Oasis Token",
+      "symbol": "FTMO",
+      "address": "0x9bD0611610A0f5133e4dd1bFdd71C5479Ee77f37",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/FTMO.png"
+    },
+    {
+      "name": "Wootrade Network",
+      "symbol": "WOO",
+      "address": "0x6626c47c00F1D87902fc13EECfaC3ed06D5E8D8a",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/WOO.png"
+    },
+    {
+      "name": "fSWAMP Token",
+      "symbol": "fSWAMP",
+      "address": "0x23cBC7C95a13071562af2C4Fb1Efa7a284d0543a",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/fSWAMP.png"
+    },
+    {
+      "name": "Treeb",
+      "symbol": "TREEB",
+      "address": "0xc60D7067dfBc6f2caf30523a064f416A5Af52963",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/TREEB.png"
     }
   ]
 }
