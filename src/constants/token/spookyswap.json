@@ -464,6 +464,38 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/TREEB.png"
+    },
+    {
+      "name": "Morpheus Token",
+      "symbol": "MORPH",
+      "address": "0x0789fF5bA37f72ABC4D561D00648acaDC897b32d",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/MORPH.png"
+    },
+    {
+      "name": "Iron Finance ICE Token",
+      "symbol": "IronICE",
+      "address": "0x260b3E40c714Ce8196465Ec824Cd8Bb915081812",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/IronICE.png"
+    },
+    {
+      "name": "Timechain Swap Token",
+      "symbol": "TCS",
+      "address": "0xFbfAE0DD49882e503982f8eb4b8B1e464ecA0b91",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/TCS.png"
+    },
+    {
+      "name": "FANG Token",
+      "symbol": "FANG",
+      "address": "0x49894fCC07233957c35462cfC3418Ef0CC26129f",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/FANG.png"
     }
   ]
 }
