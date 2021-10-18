@@ -512,6 +512,54 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/GEIST.png"
+    },
+    {
+      "name": "Cougar Token",
+      "symbol": "CGS",
+      "address": "0x5a2e451Fb1b46FDE7718315661013ae1aE68e28C",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/CGS.png"
+    },
+    {
+      "name": "Sing Token",
+      "symbol": "SING",
+      "address": "0x53D831e1db0947c74e8a52618f662209ec5dE0cE",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/SING.png"
+    },
+    {
+      "name": "Spell Token",
+      "symbol": "SPELL",
+      "address": "0x468003B688943977e6130F4F68F23aad939a1040",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/SPELL.png"
+    },
+    {
+      "name": "CoffinDollar",
+      "symbol": "CoUSD",
+      "address": "0x0DeF844ED26409C5C46dda124ec28fb064D90D27",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/CoUSD.png"
+    },
+    {
+      "name": "CoffinToken",
+      "symbol": "COFFIN",
+      "address": "0x593Ab53baFfaF1E821845cf7080428366F030a9c",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/COFFIN.png"
+    },
+    {
+      "name": "Font",
+      "symbol": "FONT",
+      "address": "0xbbc4A8d076F4B1888fec42581B6fc58d242CF2D5",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/FONT.png"
     }
   ]
 }
