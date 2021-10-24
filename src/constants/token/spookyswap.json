@@ -560,6 +560,72 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/FONT.png"
+    },
+    {
+      "name": "CyberFi Token",
+      "symbol": "CFi",
+      "address": "0x6a545f9c64d8f7B957D8D2e6410B52095A9E6c29",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/CFi.png",
+      "bridgeId": "cfiv3",
+      "nativeChain": 1
+    },
+    {
+      "name": "DarkMatter",
+      "symbol": "DMD",
+      "address": "0x90E892FED501ae00596448aECF998C88816e5C0F",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/DMD.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "FTM-Meso",
+      "symbol": "MESO",
+      "address": "0x4D9361A86D038C8adA3db2457608e2275B3E08d4",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/MESO.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Dola USD Stablecoin",
+      "symbol": "DOLA",
+      "address": "0x3129662808bEC728a27Ab6a6b9AFd3cBacA8A43c",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/DOLA.png",
+      "bridgeId": "dolav5",
+      "nativeChain": 1
+    },
+    {
+      "name": "Inverse DAO",
+      "symbol": "INV",
+      "address": "0xb84527D59b6Ecb96F433029ECc890D4492C5dCe1",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/INV.png",
+      "bridgeId": "invv5",
+      "nativeChain": 1
+    },
+    {
+      "name": "TravaFinance Token",
+      "symbol": "TRAVA",
+      "address": "0x477a9D5dF9bedA06F6b021136a2efe7BE242fCC9",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/TRAVA.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "summitdefi.com",
+      "symbol": "SUMMIT",
+      "address": "0x8F9bCCB6Dd999148Da1808aC290F2274b13D7994",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/SUMMIT.png",
+      "bridgeId": ""
     }
   ]
 }
