@@ -65,7 +65,7 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
 
 export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
-    return `https://spookyswap.finance/swap?inputCurrency=${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token0Address}`
+    return `https://spookyswap.finance/swap?outputCurrency=${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token0Address}`
   } else {
     return `https://spookyswap.finance/swap?inputCurrency=${
       token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token0Address
