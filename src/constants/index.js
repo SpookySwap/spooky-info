@@ -54,5 +54,6 @@ export const UNTRACKED_COPY = 'Derived USD values may be inaccurate without liqu
 
 // tokens that should be tracked but arent due to lag in subgraph
 export const TRACKED_OVERRIDES = [
+  '0x26519b547416e4f53f3a4b05b95ef859c3bd89fe',
   '0xf6c7197eaff13002a7b2a2e835a7bb6969a4b026'
 ]
