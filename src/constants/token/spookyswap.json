@@ -665,6 +665,51 @@
       "chainId": 250,
       "decimals": 9,
       "logoURI": "https://assets.spookyswap.finance/tokens/EXOD.png"
+    },
+    {
+      "name": "FantomStarter",
+      "symbol": "FS",
+      "address": "0xC758295Cd1A564cdb020a78a681a838CF8e0627D",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/FS.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "ArtWallet",
+      "symbol": "1ART",
+      "address": "0xD3c325848D7c6E29b574Cb0789998b2ff901f17E",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/1ART.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Bouje Token",
+      "symbol": "BOUJE",
+      "address": "0x37F70aa9fEfc8971117BD53A1Ddc2372aa7Eec41",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/BOUJE.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Feeder.finance",
+      "symbol": "FEED",
+      "address": "0x5d5530eb3147152FE78d5C4bFEeDe054c8d1442A",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/FEED.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "JulSwap",
+      "symbol": "JulD",
+      "address": "0xEFF6FcfBc2383857Dd66ddf57effFC00d58b7d9D",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/JulD.png",
+      "bridgeId": ""
     }
   ]
 }
