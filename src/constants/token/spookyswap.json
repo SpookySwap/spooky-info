@@ -710,6 +710,60 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/JulD.png",
       "bridgeId": ""
+    },
+    {
+      "name": "miMATIC",
+      "symbol": "MAI",
+      "address": "0xfB98B335551a418cD0737375a2ea0ded62Ea213b",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/MAI.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Hector",
+      "symbol": "HEC",
+      "address": "0x5C4FDfc5233f935f20D2aDbA572F770c2E377Ab0",
+      "chainId": 250,
+      "decimals": 9,
+      "logoURI": "https://assets.spookyswap.finance/tokens/HEC.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Spartacus",
+      "symbol": "SPA",
+      "address": "0x5602df4A94eB6C680190ACCFA2A475621E0ddBdc",
+      "chainId": 250,
+      "decimals": 9,
+      "logoURI": "https://assets.spookyswap.finance/tokens/SPA.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "JoeToken",
+      "symbol": "JOE",
+      "address": "0x9F47F313ACFd4bdC52F4373b493EaE7d5aC5b765",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/JOE.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Fantohm",
+      "symbol": "FHM",
+      "address": "0xfa1FBb8Ef55A4855E5688C0eE13aC3f202486286",
+      "chainId": 250,
+      "decimals": 9,
+      "logoURI": "https://assets.spookyswap.finance/tokens/FHM.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "SoulPower",
+      "symbol": "SOUL",
+      "address": "0xe2fb177009FF39F52C0134E8007FA0e4BaAcBd07",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/SOUL.png",
+      "bridgeId": ""
     }
   ]
 }
