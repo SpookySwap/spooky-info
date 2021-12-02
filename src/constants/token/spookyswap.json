@@ -764,6 +764,33 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/SOUL.png",
       "bridgeId": ""
+    },
+    {
+      "name": "TrueUSD",
+      "symbol": "TUSD",
+      "address": "0x9879aBDea01a879644185341F7aF7d8343556B7a",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/TUSD.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "moda",
+      "symbol": "MODA",
+      "address": "0x6496994241804D7fE2b032901931e03bCD82301F",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/MODA.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Raven",
+      "symbol": "RAVEN",
+      "address": "0x175cbf2809acFD7521fDd387d65aac523Fe4076F",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/RAVEN.png",
+      "bridgeId": ""
     }
   ]
 }
