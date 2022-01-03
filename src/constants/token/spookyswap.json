@@ -8,10 +8,7 @@
   },
   "tags": {},
   "logoURI": "http://assets.spookyswap.finance/tokens/BOO.png",
-  "keywords": [
-    "spookyswap",
-    "default"
-  ],
+  "keywords": ["spookyswap", "default"],
   "tokens": [
     {
       "name": "Aave",
@@ -52,9 +49,7 @@
       "logoURI": "https://assets.spookyswap.finance/tokens/BOO.png",
       "bridgeId": "boov2",
       "nativeChain": 1,
-      "v3Chains": [
-        43114
-      ]
+      "v3Chains": [43114]
     },
     {
       "name": "Cover Protocol",
@@ -95,11 +90,7 @@
       "logoURI": "https://assets.spookyswap.finance/tokens/DAI.png",
       "bridgeId": "daiv2",
       "nativeChain": 1,
-      "v3Chains": [
-        56,
-        137,
-        43114
-      ]
+      "v3Chains": [56, 137, 43114]
     },
     {
       "name": "Frapped USDT",
@@ -110,12 +101,7 @@
       "logoURI": "https://assets.spookyswap.finance/tokens/fUSDT.png",
       "bridgeId": "usdtv3",
       "nativeChain": 1,
-      "v3Chains": [
-        137,
-        56,
-        66,
-        43114
-      ]
+      "v3Chains": [137, 56, 66, 43114]
     },
     {
       "name": "Graviton",
@@ -176,13 +162,7 @@
       "logoURI": "https://assets.spookyswap.finance/tokens/USDC.png",
       "bridgeId": "usdcv2",
       "nativeChain": 1,
-      "v3Chains": [
-        137,
-        56,
-        66,
-        42161,
-        43114
-      ]
+      "v3Chains": [137, 56, 66, 42161, 43114]
     },
     {
       "name": "Wrapped Bitcoin",
@@ -203,11 +183,7 @@
       "logoURI": "https://assets.spookyswap.finance/tokens/wETH.png",
       "bridgeId": "wethv2",
       "nativeChain": 1,
-      "v3Chains": [
-        56,
-        137,
-        43114
-      ]
+      "v3Chains": [56, 137, 43114]
     },
     {
       "name": "Wrapped FTM",
@@ -294,12 +270,7 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/TOMB.png",
       "bridgeId": "",
-      "v3Chains": [
-        1,
-        56,
-        137,
-        43114
-      ]
+      "v3Chains": [1, 56, 137, 43114]
     },
     {
       "name": "TSHARE",
@@ -336,12 +307,7 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/MIM.png",
       "bridgeId": "",
-      "v3Chains": [
-        1,
-        56,
-        43114,
-        42161
-      ]
+      "v3Chains": [1, 56, 43114, 42161]
     },
     {
       "name": "ShadeToken",
@@ -442,7 +408,7 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/ELITE.png",
-      "bridgeId": ""
+      "bridgeId": "" 
     },
     {
       "name": "Fantom Oasis Token",
@@ -480,9 +446,7 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/IronICE.png",
       "bridgeId": "",
-      "v3Chains": [
-        137
-      ]
+      "v3Chains": [137]
     },
     {
       "name": "Timechain Swap Token",
@@ -556,10 +520,7 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/SPELL.png",
       "bridgeId": "",
-      "v3Chains": [
-        1,
-        43114
-      ]
+      "v3Chains": [1, 43114]
     },
     {
       "name": "CoffinDollar",
@@ -754,9 +715,7 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/JOE.png",
       "bridgeId": "",
-      "v3Chains": [
-        43114
-      ]
+      "v3Chains": [43114]
     },
     {
       "name": "Fantohm",
@@ -905,9 +864,26 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/AVAX.png",
       "bridgeId": "",
-      "v3Chains": [
-        43114
-      ]
+      "v3Chains": [43114]
+    },    
+    {
+      "name": "Multichain",
+      "symbol": "MULTI",
+      "address": "0x9Fb9a33956351cf4fa040f65A13b835A3C8764E3",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/MULTI.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Polygon",
+      "symbol": "MATIC",
+      "address": "0x40DF1Ae6074C35047BFF66675488Aa2f9f6384F3",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/MATIC.png",
+      "bridgeId": "maticv5",
+      "nativeChain": 137
     }
   ]
 }
