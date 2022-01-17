@@ -260,7 +260,8 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/BIFI.png",
       "bridgeId": "bifiv4",
-      "nativeChain": 56
+      "nativeChain": 56,
+      "v3Chains": [25, 137, 43114, 42161, 1666600000]
     },
     {
       "name": "TOMB",
@@ -687,7 +688,8 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/MAI.png",
       "bridgeId": "mimaticv3",
-      "nativeChain": 137
+      "nativeChain": 137,
+      "v3Chains": [25, 56, 42161, 43114, 1666600000]
     },
     {
       "name": "Hector",
@@ -863,8 +865,7 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/AVAX.png",
-      "bridgeId": "",
-      "v3Chains": [43114]
+      "bridgeId": ""
     },    
     {
       "name": "Multichain",
@@ -884,6 +885,61 @@
       "logoURI": "https://assets.spookyswap.finance/tokens/MATIC.png",
       "bridgeId": "maticv5",
       "nativeChain": 137
+    },
+    {
+      "name": "Scary Chain Capital",
+      "symbol": "SCC",
+      "address": "0xa231D452e4bCA86672FD6109de94688d1E17Aae5",
+      "chainId": 250,
+      "decimals": 9,
+      "logoURI": "https://assets.spookyswap.finance/tokens/SCC.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Hundred Finance",
+      "symbol": "HND",
+      "address": "0x10010078a54396F62c96dF8532dc2B4847d47ED3",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/HND.png",
+      "bridgeId": "",
+      "v3Chains": [1, 42161, 1666600000]
+    },
+    {
+      "name": "Creditum",
+      "symbol": "CREDIT",
+      "address": "0x77128DFdD0ac859B33F44050c6fa272F34872B5E",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/CREDIT.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Creditum USD",
+      "symbol": "cUSD",
+      "address": "0xE3a486C1903Ea794eED5d5Fa0C9473c7D7708f40",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/cUSD.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "LIQR",
+      "symbol": "LIQR",
+      "address": "0x33333ee26a7d02e41c33828B42Fb1E0889143477",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/LIQR.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "SUPA Foundation",
+      "symbol": "SUPA",
+      "address": "0x59D07a115fe3FFe5db3D52029D43Cc0ef5e9ba08",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/SUPA.png",
+      "bridgeId": ""
     }
   ]
 }
