@@ -524,7 +524,7 @@ export const GLOBAL_TXNS = gql`
 
 export const ALL_TOKENS = gql`
   query tokens($skip: Int!) {
-    tokens(first: 500, skip: $skip) {
+    tokens(first: 100, skip: $skip) {
       id
       name
       symbol
@@ -602,7 +602,7 @@ export const PAIR_SEARCH = gql`
 
 export const ALL_PAIRS = gql`
   query pairs($skip: Int!) {
-    pairs(first: 500, skip: $skip, orderBy: trackedReserveETH, orderDirection: desc) {
+    pairs(first: 250, skip: $skip, orderBy: trackedReserveETH, orderDirection: desc) {
       id
       token0 {
         id
@@ -652,7 +652,7 @@ const PairFields = `
 
 export const PAIRS_CURRENT = gql`
   query pairs {
-    pairs(first: 200, orderBy: reserveUSD, orderDirection: desc) {
+    pairs(first: 200, orderBy: trackedReserveETH, orderDirection: desc) {
       id
     }
   }
@@ -696,7 +696,7 @@ export const MINING_POSITIONS = (account) => {
 export const PAIRS_BULK = gql`
   ${PairFields}
   query pairs($allPairs: [Bytes]!) {
-    pairs(first: 500, where: { id_in: $allPairs }, orderBy: trackedReserveETH, orderDirection: desc) {
+    pairs(first: 200, where: { id_in: $allPairs }, orderBy: trackedReserveETH, orderDirection: desc) {
       ...PairFields
     }
   }
@@ -710,7 +710,7 @@ export const PAIRS_HISTORICAL_BULK = (block, pairs) => {
   pairsString += ']'
   let queryString = `
   query pairs {
-    pairs(first: 200, where: {id_in: ${pairsString}}, block: {number: ${block}}, orderBy: trackedReserveETH, orderDirection: desc) {
+    pairs(first: 250, where: {id_in: ${pairsString}}, block: {number: ${block}}, orderBy: trackedReserveETH, orderDirection: desc) {
       id
       reserveUSD
       trackedReserveETH
@@ -755,7 +755,7 @@ const TokenFields = `
 export const TOKENS_CURRENT = gql`
   ${TokenFields}
   query tokens {
-    tokens(first: 200, orderBy: tradeVolumeUSD, orderDirection: desc) {
+    tokens(first: 100, orderBy: tradeVolumeUSD, orderDirection: desc) {
       ...TokenFields
     }
   }

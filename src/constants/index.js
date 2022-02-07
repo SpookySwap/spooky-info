@@ -31,12 +31,14 @@ export const TOKEN_BLACKLIST = [
   '0x7df4eaa13fba3aa7ec3b77b412566e5204e1539a',
   '0x0fd72ba4e27ba45da0a2a1b45b395a2994751e96',
   '0xaa348cde30eca12ac31d21c3007f06d4c8e577ce',
-  '0xd7d5d35883d46d77592d3bff7f1d2414eae01602'
+  '0xd7d5d35883d46d77592d3bff7f1d2414eae01602',
+  '0x97444f7a914c0ec57094d81a2f3ec5100691898a'
 ]
 
 // pair blacklist
 export const PAIR_BLACKLIST = [
-  '0x8c1c4da6754cfbc37e09620ef2774fe59e7bba88'
+  '0x8c1c4da6754cfbc37e09620ef2774fe59e7bba88',
+  '0xce79b02ea60e97674f355ef47b250f20f8554878'
 ]
 
 // warnings to display if page contains info about blocked token
@@ -52,5 +54,8 @@ export const UNTRACKED_COPY = 'Derived USD values may be inaccurate without liqu
 
 // tokens that should be tracked but arent due to lag in subgraph
 export const TRACKED_OVERRIDES = [
-  '0xf6c7197eaff13002a7b2a2e835a7bb6969a4b026'
+  '0x26519b547416e4f53f3a4b05b95ef859c3bd89fe',
+  '0xf6c7197eaff13002a7b2a2e835a7bb6969a4b026',
+  '0x46622913ce40c54ec14857f72968d4baaf963947',
+  '0x0f8d6953f58c0dd38077495aca64cbd1c76b7501'
 ]
