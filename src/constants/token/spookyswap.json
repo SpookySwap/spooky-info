@@ -3,12 +3,15 @@
   "timestamp": "2021-04-06T22:05:02Z",
   "version": {
     "major": 1,
-    "minor": 0,
+    "minor": 1,
     "patch": 0
   },
   "tags": {},
   "logoURI": "http://assets.spookyswap.finance/tokens/BOO.png",
-  "keywords": ["spookyswap", "default"],
+  "keywords": [
+    "spookyswap",
+    "default"
+  ],
   "tokens": [
     {
       "name": "Aave",
@@ -49,7 +52,9 @@
       "logoURI": "https://assets.spookyswap.finance/tokens/BOO.png",
       "bridgeId": "boov2",
       "nativeChain": 1,
-      "v3Chains": [43114]
+      "v3Chains": [
+        43114
+      ]
     },
     {
       "name": "Cover Protocol",
@@ -90,7 +95,11 @@
       "logoURI": "https://assets.spookyswap.finance/tokens/DAI.png",
       "bridgeId": "daiv2",
       "nativeChain": 1,
-      "v3Chains": [56, 137, 43114]
+      "v3Chains": [
+        56,
+        137,
+        43114
+      ]
     },
     {
       "name": "Frapped USDT",
@@ -101,7 +110,12 @@
       "logoURI": "https://assets.spookyswap.finance/tokens/fUSDT.png",
       "bridgeId": "usdtv3",
       "nativeChain": 1,
-      "v3Chains": [137, 56, 66, 43114]
+      "v3Chains": [
+        137,
+        56,
+        66,
+        43114
+      ]
     },
     {
       "name": "Graviton",
@@ -162,7 +176,13 @@
       "logoURI": "https://assets.spookyswap.finance/tokens/USDC.png",
       "bridgeId": "usdcv2",
       "nativeChain": 1,
-      "v3Chains": [137, 56, 66, 42161, 43114]
+      "v3Chains": [
+        137,
+        56,
+        66,
+        42161,
+        43114
+      ]
     },
     {
       "name": "Wrapped Bitcoin",
@@ -183,7 +203,11 @@
       "logoURI": "https://assets.spookyswap.finance/tokens/wETH.png",
       "bridgeId": "wethv2",
       "nativeChain": 1,
-      "v3Chains": [56, 137, 43114]
+      "v3Chains": [
+        56,
+        137,
+        43114
+      ]
     },
     {
       "name": "Wrapped FTM",
@@ -261,7 +285,13 @@
       "logoURI": "https://assets.spookyswap.finance/tokens/BIFI.png",
       "bridgeId": "bifiv4",
       "nativeChain": 56,
-      "v3Chains": [25, 137, 43114, 42161, 1666600000]
+      "v3Chains": [
+        25,
+        137,
+        43114,
+        42161,
+        1666600000
+      ]
     },
     {
       "name": "TOMB",
@@ -271,7 +301,12 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/TOMB.png",
       "bridgeId": "",
-      "v3Chains": [1, 56, 137, 43114]
+      "v3Chains": [
+        1,
+        56,
+        137,
+        43114
+      ]
     },
     {
       "name": "TSHARE",
@@ -308,7 +343,12 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/MIM.png",
       "bridgeId": "",
-      "v3Chains": [1, 56, 43114, 42161]
+      "v3Chains": [
+        1,
+        56,
+        43114,
+        42161
+      ]
     },
     {
       "name": "ShadeToken",
@@ -409,7 +449,7 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/ELITE.png",
-      "bridgeId": "" 
+      "bridgeId": ""
     },
     {
       "name": "Fantom Oasis Token",
@@ -447,7 +487,9 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/IronICE.png",
       "bridgeId": "",
-      "v3Chains": [137]
+      "v3Chains": [
+        137
+      ]
     },
     {
       "name": "Timechain Swap Token",
@@ -521,7 +563,10 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/SPELL.png",
       "bridgeId": "",
-      "v3Chains": [1, 43114]
+      "v3Chains": [
+        1,
+        43114
+      ]
     },
     {
       "name": "CoffinDollar",
@@ -587,15 +632,6 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/TRAVA.png",
-      "bridgeId": ""
-    },
-    {
-      "name": "summitdefi.com",
-      "symbol": "SUMMIT",
-      "address": "0x8F9bCCB6Dd999148Da1808aC290F2274b13D7994",
-      "chainId": 250,
-      "decimals": 18,
-      "logoURI": "https://assets.spookyswap.finance/tokens/SUMMIT.png",
       "bridgeId": ""
     },
     {
@@ -689,7 +725,13 @@
       "logoURI": "https://assets.spookyswap.finance/tokens/MAI.png",
       "bridgeId": "mimaticv3",
       "nativeChain": 137,
-      "v3Chains": [25, 56, 42161, 43114, 1666600000]
+      "v3Chains": [
+        25,
+        56,
+        42161,
+        43114,
+        1666600000
+      ]
     },
     {
       "name": "Hector",
@@ -717,7 +759,9 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/JOE.png",
       "bridgeId": "",
-      "v3Chains": [43114]
+      "v3Chains": [
+        43114
+      ]
     },
     {
       "name": "Fantohm",
@@ -866,8 +910,10 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/AVAX.png",
       "bridgeId": "",
-      "v3Chains": [43114]
-    },    
+      "v3Chains": [
+        43114
+      ]
+    },
     {
       "name": "Multichain",
       "symbol": "MULTI",
@@ -904,7 +950,11 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/HND.png",
       "bridgeId": "",
-      "v3Chains": [1, 42161, 1666600000]
+      "v3Chains": [
+        1,
+        42161,
+        1666600000
+      ]
     },
     {
       "name": "Creditum",
@@ -1095,7 +1145,9 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/KAE.png",
       "bridgeId": "",
-      "v3Chains": [1]
+      "v3Chains": [
+        1
+      ]
     },
     {
       "name": "5table Token",
@@ -1214,6 +1266,54 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/GRO.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "AlpacaToken",
+      "symbol": "ALPACA",
+      "address": "0xaD996A45fd2373ed0B10Efa4A8eCB9de445A4302",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/ALPACA.png",
+      "bridgeId": "",
+      "v3Chains": [
+        56
+      ]
+    },
+    {
+      "name": "BASED",
+      "symbol": "BASED",
+      "address": "0x8D7d3409881b51466B483B11Ea1B8A03cdEd89ae",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/BASED.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "BSHARE",
+      "symbol": "BSHARE",
+      "address": "0x49C290Ff692149A4E16611c694fdED42C954ab7a",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/BSHARE.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Raini",
+      "symbol": "RAINI",
+      "address": "0xe83dFaaAfd3310474D917583Ae9633B4f68fB036",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/RAINI.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Solid",
+      "symbol": "SOLID",
+      "address": "0x888EF71766ca594DED1F0FA3AE64eD2941740A20",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/SOLID.png",
       "bridgeId": ""
     }
   ]
