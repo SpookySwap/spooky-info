@@ -3,7 +3,7 @@
   "timestamp": "2021-04-06T22:05:02Z",
   "version": {
     "major": 1,
-    "minor": 1,
+    "minor": 0,
     "patch": 0
   },
   "tags": {},
@@ -1315,6 +1315,166 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/SOLID.png",
       "bridgeId": ""
+    },
+    {
+      "name": "PLAT",
+      "symbol": "PLAT",
+      "address": "0xDf15d33875AcF462a8746BF99396F6cCD50E0fFe",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/PLAT.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "SPLAT",
+      "symbol": "SPLAT",
+      "address": "0x32D50718bB7813C248ff4891d307EaB6964e965e",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/SPLAT.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "DEVIL Token",
+      "symbol": "DEVIL",
+      "address": "0x174c7106AEeCdC11389f7dD21342F05f46CCB40F",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/DEVIL.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Vive la Bouje",
+      "symbol": "VIVE",
+      "address": "0xE509Db88B3c26D45f1fFf45b48E7c36A8399B45A",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/VIVE.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Our",
+      "symbol": "Our",
+      "address": "0xa68eEEe3EB02B4195537DC3326436c83505fB5cf",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/OUR.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Trusted Node",
+      "symbol": "TNODE",
+      "address": "0x7FC5670B2041d34414B0b2178Fc660b1E1faF801",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/TNODE.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "PAR Stablecoin",
+      "symbol": "PAR",
+      "address": "0x13082681E8CE9bd0aF505912d306403592490Fc7",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/PAR.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Oath Token",
+      "symbol": "OATH",
+      "address": "0x21Ada0D2aC28C3A5Fa3cD2eE30882dA8812279B6",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/OATH.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Wrapped Banano",
+      "symbol": "wBAN",
+      "address": "0xe20B9e246db5a0d21BF9209E4858Bc9A3ff7A034",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/wBAN.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "FAME",
+      "symbol": "FAME",
+      "address": "0x904f51a2E7eEaf76aaF0418cbAF0B71149686f4A",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/FAME.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Fantasm XFTM Token",
+      "symbol": "XFTM",
+      "address": "0xfBD2945D3601f21540DDD85c29C5C3CaF108B96F",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/XFTM.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Fantasm FSM Token",
+      "symbol": "FSM",
+      "address": "0xaa621D2002b5a6275EF62d7a065A865167914801",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/FSM.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Onino",
+      "symbol": "ONI",
+      "address": "0x667c856f1A624BAeFE89fC4909C8701296C86c98",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/ONI.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "StargateToken",
+      "symbol": "STG",
+      "address": "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/STG.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "QUANTUM",
+      "symbol": "QTM",
+      "address": "0x11223344D5B43ec0930af1236f4CF67BF7D81217",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/QTM.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Penguin Karts",
+      "symbol": "PGK",
+      "address": "0x188a168280589bC3E483d77aae6b4A1d26bD22dC",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/PGK.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "ApeCoin",
+      "symbol": "APE",
+      "address": "0x2d72A97a31Dc920dB03330780d30074626e39C8A",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/APE.png",
+      "bridgeId": "",
+      "v3Chains": [
+        1,
+        25,
+        137,
+        56,
+        43114
+      ]
     }
   ]
 }
