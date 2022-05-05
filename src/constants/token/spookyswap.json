@@ -425,15 +425,6 @@
       "bridgeId": ""
     },
     {
-      "name": "OliveCash Token",
-      "symbol": "fOLIVE",
-      "address": "0xA9937092c4E2B0277C16802Cc8778D252854688A",
-      "chainId": 250,
-      "decimals": 18,
-      "logoURI": "https://assets.spookyswap.finance/tokens/OLIVE.png",
-      "bridgeId": ""
-    },
-    {
       "name": "Syfin",
       "symbol": "SYF",
       "address": "0x1BCF4DC879979C68fA255f731FE8Dcf71970c9bC",
@@ -480,33 +471,12 @@
       "bridgeId": ""
     },
     {
-      "name": "Iron Finance ICE Token",
-      "symbol": "IronICE",
-      "address": "0x260b3E40c714Ce8196465Ec824Cd8Bb915081812",
-      "chainId": 250,
-      "decimals": 18,
-      "logoURI": "https://assets.spookyswap.finance/tokens/IronICE.png",
-      "bridgeId": "",
-      "v3Chains": [
-        137
-      ]
-    },
-    {
       "name": "Timechain Swap Token",
       "symbol": "TCS",
       "address": "0xFbfAE0DD49882e503982f8eb4b8B1e464ecA0b91",
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/TCS.png",
-      "bridgeId": ""
-    },
-    {
-      "name": "FANG Token",
-      "symbol": "FANG",
-      "address": "0x49894fCC07233957c35462cfC3418Ef0CC26129f",
-      "chainId": 250,
-      "decimals": 18,
-      "logoURI": "https://assets.spookyswap.finance/tokens/FANG.png",
       "bridgeId": ""
     },
     {
@@ -544,15 +514,6 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/CGS.png",
-      "bridgeId": ""
-    },
-    {
-      "name": "Sing Token",
-      "symbol": "SING",
-      "address": "0x53D831e1db0947c74e8a52618f662209ec5dE0cE",
-      "chainId": 250,
-      "decimals": 18,
-      "logoURI": "https://assets.spookyswap.finance/tokens/SING.png",
       "bridgeId": ""
     },
     {
@@ -662,15 +623,6 @@
       "bridgeId": ""
     },
     {
-      "name": "Exodia",
-      "symbol": "EXOD",
-      "address": "0x3b57f3FeAaF1e8254ec680275Ee6E7727C7413c7",
-      "chainId": 250,
-      "decimals": 9,
-      "logoURI": "https://assets.spookyswap.finance/tokens/EXOD.png",
-      "bridgeId": ""
-    },
-    {
       "name": "FantomStarter",
       "symbol": "FS",
       "address": "0xC758295Cd1A564cdb020a78a681a838CF8e0627D",
@@ -686,24 +638,6 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/1ART.png",
-      "bridgeId": ""
-    },
-    {
-      "name": "Bouje Token",
-      "symbol": "BOUJE",
-      "address": "0x37F70aa9fEfc8971117BD53A1Ddc2372aa7Eec41",
-      "chainId": 250,
-      "decimals": 18,
-      "logoURI": "https://assets.spookyswap.finance/tokens/BOUJE.png",
-      "bridgeId": ""
-    },
-    {
-      "name": "Feeder.finance",
-      "symbol": "FEED",
-      "address": "0x5d5530eb3147152FE78d5C4bFEeDe054c8d1442A",
-      "chainId": 250,
-      "decimals": 18,
-      "logoURI": "https://assets.spookyswap.finance/tokens/FEED.png",
       "bridgeId": ""
     },
     {
@@ -770,15 +704,6 @@
       "chainId": 250,
       "decimals": 9,
       "logoURI": "https://assets.spookyswap.finance/tokens/FHM.png",
-      "bridgeId": ""
-    },
-    {
-      "name": "SoulPower",
-      "symbol": "SOUL",
-      "address": "0xe2fb177009FF39F52C0134E8007FA0e4BaAcBd07",
-      "chainId": 250,
-      "decimals": 18,
-      "logoURI": "https://assets.spookyswap.finance/tokens/SOUL.png",
       "bridgeId": ""
     },
     {
@@ -882,16 +807,6 @@
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/BRUSH.png",
       "bridgeId": ""
-    },
-    {
-      "name": "Onx.finance",
-      "symbol": "ONX",
-      "address": "0x27749e79Ad796c4251E0A0564AeF45235493a0b6",
-      "chainId": 250,
-      "decimals": 18,
-      "logoURI": "https://assets.spookyswap.finance/tokens/ONX.png",
-      "bridgeId": "onxv5",
-      "nativeChain": 1
     },
     {
       "name": "WingSwap",
@@ -1044,15 +959,6 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/Atlas.png",
-      "bridgeId": ""
-    },
-    {
-      "name": "Fantom Lory Token",
-      "symbol": "fLORY",
-      "address": "0x05cE3E76EDe285D6ed2507D5472CA1c061Ac9a8c",
-      "chainId": 250,
-      "decimals": 18,
-      "logoURI": "https://assets.spookyswap.finance/tokens/fLORY.png",
       "bridgeId": ""
     },
     {
@@ -1241,16 +1147,6 @@
       "bridgeId": ""
     },
     {
-      "name": "Tempus",
-      "symbol": "TEMP",
-      "address": "0x1c174f6AB0753162befbB916c69dEF2cc1bfdEc1",
-      "chainId": 250,
-      "decimals": 18,
-      "logoURI": "https://assets.spookyswap.finance/tokens/TEMP.png",
-      "bridgeId": "tempv6",
-      "nativeChain": 1
-    },
-    {
       "name": "TOR",
       "symbol": "TOR",
       "address": "0x74E23dF9110Aa9eA0b6ff2fAEE01e740CA1c642e",
@@ -1314,24 +1210,6 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://assets.spookyswap.finance/tokens/SOLID.png",
-      "bridgeId": ""
-    },
-    {
-      "name": "PLAT",
-      "symbol": "PLAT",
-      "address": "0xDf15d33875AcF462a8746BF99396F6cCD50E0fFe",
-      "chainId": 250,
-      "decimals": 18,
-      "logoURI": "https://assets.spookyswap.finance/tokens/PLAT.png",
-      "bridgeId": ""
-    },
-    {
-      "name": "SPLAT",
-      "symbol": "SPLAT",
-      "address": "0x32D50718bB7813C248ff4891d307EaB6964e965e",
-      "chainId": 250,
-      "decimals": 18,
-      "logoURI": "https://assets.spookyswap.finance/tokens/SPLAT.png",
       "bridgeId": ""
     },
     {
@@ -1407,24 +1285,6 @@
       "bridgeId": ""
     },
     {
-      "name": "Fantasm XFTM Token",
-      "symbol": "XFTM",
-      "address": "0xfBD2945D3601f21540DDD85c29C5C3CaF108B96F",
-      "chainId": 250,
-      "decimals": 18,
-      "logoURI": "https://assets.spookyswap.finance/tokens/XFTM.png",
-      "bridgeId": ""
-    },
-    {
-      "name": "Fantasm FSM Token",
-      "symbol": "FSM",
-      "address": "0xaa621D2002b5a6275EF62d7a065A865167914801",
-      "chainId": 250,
-      "decimals": 18,
-      "logoURI": "https://assets.spookyswap.finance/tokens/FSM.png",
-      "bridgeId": ""
-    },
-    {
       "name": "Onino",
       "symbol": "ONI",
       "address": "0x667c856f1A624BAeFE89fC4909C8701296C86c98",
@@ -1475,6 +1335,195 @@
         56,
         43114
       ]
+    },
+    {
+      "name": "Metavault",
+      "symbol": "MVD",
+      "address": "0x27746007e821aeec6F9C65CBFda04870c236346c",
+      "chainId": 250,
+      "decimals": 9,
+      "logoURI": "https://assets.spookyswap.finance/tokens/MVD.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Code7 Finance",
+      "symbol": "CODE7",
+      "address": "0xF77864FCFfeC4598813E3378681c9330B771cA88",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/CODE7.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "PanicSwap",
+      "symbol": "PANIC",
+      "address": "0xA882CeAC81B22FC2bEF8E1A82e823e3E9603310B",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/PANIC.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Elyseos",
+      "symbol": "ELYS",
+      "address": "0xd89cc0d2A28a769eADeF50fFf74EBC07405DB9Fc",
+      "chainId": 250,
+      "decimals": 5,
+      "logoURI": "https://assets.spookyswap.finance/tokens/ELYS.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Orbs",
+      "symbol": "ORBS",
+      "address": "0x3E01B7E242D5AF8064cB9A8F9468aC0f8683617c",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/ORBS.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Tank Gold Token",
+      "symbol": "TGOLD",
+      "address": "0xA74bb2C6e5fE2805a0086D05e37c256274935690",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/TGOLD.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Beefy Escrowed Fantom",
+      "symbol": "beFTM",
+      "address": "0x7381eD41F6dE418DdE5e84B55590422a57917886",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/beFTM.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "MiniVerse Dollar",
+      "symbol": "MvDOLLAR",
+      "address": "0x57976c467608983513c9355238dc6de1B1aBbcCA",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/MvDOLLAR.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "MiniVerse Share",
+      "symbol": "MSHARE",
+      "address": "0xb011EC534d9175cD7a69aFBfc1bcc9990862c462",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/MSHARE.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Volta",
+      "symbol": "VOLTa",
+      "address": "0x4C9993C7107495020c2Ce9A13d11839F48EcD2E6",
+      "chainId": 250,
+      "decimals": 9,
+      "logoURI": "https://assets.spookyswap.finance/tokens/VOLTa.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Wrapped TurtleCoins",
+      "symbol": "wTRTL",
+      "address": "0x6a31Aca4d2f7398F04d9B6ffae2D898d9A8e7938",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/wTRTL.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Raid Token",
+      "symbol": "R4ID",
+      "address": "0x70f52878ca86c5f03d603CDDA414295EE410E8f3",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/R4ID.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "LUNA",
+      "symbol": "LUNA(Wormhole)",
+      "address": "0x593AE1d34c8BD7587C11D539E4F42BFf242c82Af",
+      "chainId": 250,
+      "decimals": 6,
+      "logoURI": "https://assets.spookyswap.finance/tokens/LUNAWORMHOLE.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "UST",
+      "symbol": "UST(Wormhole)",
+      "address": "0x846e4D51d7E2043C1a87E0Ab7490B93FB940357b",
+      "chainId": 250,
+      "decimals": 6,
+      "logoURI": "https://assets.spookyswap.finance/tokens/USTWORMHOLE.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "DEUS",
+      "symbol": "DEUS",
+      "address": "0xDE5ed76E7c05eC5e4572CfC88d1ACEA165109E44",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/DEUS.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "DEI",
+      "symbol": "DEI",
+      "address": "0xDE12c7959E1a72bbe8a5f7A1dc8f8EeF9Ab011B3",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/DEI.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Fantom Libero Financial Freedom",
+      "symbol": "FLIBERO",
+      "address": "0xC3f069D7439baf6D4D6E9478D9Cc77778E62D147",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/FLIBERO.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Stader",
+      "symbol": "SD(Wormhole)",
+      "address": "0x412a13C109aC30f0dB80AD3Bd1DeFd5D0A6c0Ac6",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/SDWORMHOLE.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "sFTMX",
+      "symbol": "sFTMX",
+      "address": "0xd7028092c830b5C8FcE061Af2E593413EbbC1fc1",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/sFTMX.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "Nodeify",
+      "symbol": "NDFI",
+      "address": "0x7Dcd01E3a119C8592A5aEd681cDC9eD163090362",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/NDFI.png",
+      "bridgeId": ""
+    },
+    {
+      "name": "governanceALCX",
+      "symbol": "gALCX",
+      "address": "0x70F9fd19f857411b089977E7916c05A0fc477Ac9",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://assets.spookyswap.finance/tokens/gALCX.png",
+      "bridgeId": ""
     }
   ]
 }
