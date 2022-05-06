@@ -152,7 +152,7 @@ function SideNav({ history }) {
           </AutoColumn>
           <AutoColumn gap="0.5rem" style={{ marginLeft: '.75rem', marginBottom: '4rem' }}>
             <HeaderText>
-              <Link href="https://spookyswap.finance" target="_blank">
+              <Link href="https://spooky.fi" target="_blank">
                 Homepage
               </Link>
             </HeaderText>
@@ -162,12 +162,12 @@ function SideNav({ history }) {
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://docs.spookyswap.finance" target="_blank">
+              <Link href="https://docs.spooky.fi" target="_blank">
                 Docs
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://discord.gg/weXbvPAH4Q" target="_blank">
+              <Link href="https://discord.gg/spookyswap" target="_blank">
                 Discord
               </Link>
             </HeaderText>

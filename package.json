@@ -1,7 +1,7 @@
 {
   "name": "@spookyswap/info",
   "private": true,
-  "homepage": "https://info.spookyswap.finance",
+  "homepage": "https://info.spooky.fi",
   "devDependencies": {
     "@popperjs/core": "^2.4.2",
     "@reach/portal": "^0.10.3",

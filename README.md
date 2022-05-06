@@ -1,7 +1,7 @@
 # Spooky Info
 
 
-Analytics site for [SpookySwap](https://spookyswap.finance).
+Analytics site for [SpookySwap](https://spooky.fi).
 
 ### To Start Development
 

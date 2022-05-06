@@ -48,14 +48,14 @@ export function getTimeframe(timeWindow) {
 export function getPoolLink(token0Address, token1Address = null, remove = false) {
   if (!token1Address) {
     return (
-      `https://spookyswap.finance/`+
+      `https://spooky.fi/#/`+
       (remove ? `remove` : `add`) +
       `/${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token0Address}/${'FTM'}`
     )
 
   } else {
     return (
-      `https://spookyswap.finance/`+
+      `https://spooky.fi/#/`+
       (remove ? `remove` : `add`) +
       `/${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token0Address}/`+
       `${token1Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token1Address}`
@@ -65,9 +65,9 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
 
 export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
-    return `https://spookyswap.finance/swap?outputCurrency=${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token0Address}`
+    return `https://spooky.fi/#/swap?outputCurrency=${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token0Address}`
   } else {
-    return `https://spookyswap.finance/swap?inputCurrency=${
+    return `https://spooky.fi/#/swap?inputCurrency=${
       token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token0Address
       }&outputCurrency=${token1Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token1Address}`
   }
@@ -78,11 +78,11 @@ export function getSwapLink(token0Address, token1Address = null) {
       */
 
 export function getMiningPoolLink(token0Address) {
-  return `https://spookyswap.finance`
+  return `https://spooky.fi`
 }
 
 export function getUniswapAppLink(linkVariable) {
-  let baseUniswapUrl = 'https://spookyswap.finance'
+  let baseUniswapUrl = 'https://spooky.fi'
   if (!linkVariable) {
     return baseUniswapUrl
   }
