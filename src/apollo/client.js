@@ -13,7 +13,7 @@ export const client = new ApolloClient({
 
 export const healthClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.thegraph.com/index-node/graphql',
+    uri: 'https://api.fura.org/subgraphs/name/spookyswap',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
