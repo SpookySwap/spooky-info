@@ -315,10 +315,10 @@ export const setThemeColor = (theme) => document.documentElement.style.setProper
 export const Big = (number) => new BigNumber(number)
 
 export const urls = {
-  showTransaction: (tx) => `https://ftmscan.com/tx/${tx}/`,
-  showAddress: (address) => `https://www.ftmscan.com/address/${address}/`,
-  showToken: (address) => `https://www.ftmscan.com/token/${address}/`,
-  showBlock: (block) => `https://ftmscan.com/block/${block}/`,
+  showTransaction: (tx) => `https://bttcscan.com/tx/${tx}/`,
+  showAddress: (address) => `https://www.bttcscan.com/address/${address}/`,
+  showToken: (address) => `https://www.bttcscan.com/token/${address}/`,
+  showBlock: (block) => `https://bttcscan.com/block/${block}/`,
 }
 
 export const formatTime = (unix) => {
