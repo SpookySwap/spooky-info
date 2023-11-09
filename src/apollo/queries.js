@@ -3,7 +3,7 @@ import { FACTORY_ADDRESS, BUNDLE_ID } from '../constants'
 
 export const SUBGRAPH_HEALTH = gql`
   query health {
-    indexingStatusForCurrentVersion(subgraphName: "eerieeight/spooky-swap-new") {
+    indexingStatusForCurrentVersion(subgraphName: "0xALUKARD/spookyswap-eon") {
       synced
       health
       chains {

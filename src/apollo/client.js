@@ -4,7 +4,7 @@ import { HttpLink } from 'apollo-link-http'
 
 export const client = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://subgraph.spook.fi/subgraphs/name/eerieeight/spooky-swap-new'
+    uri: 'https://eon-graph.horizenlabs.io/subgraphs/name/0xALUKARD/spookyswap-eon'
     ,
   }),
   cache: new InMemoryCache(),
@@ -13,7 +13,7 @@ export const client = new ApolloClient({
 
 export const healthClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://subgraph.spook.fi:8030/graphql',
+    uri: 'https://eon-graph.horizenlabs.io:8030/graphql',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
@@ -29,7 +29,7 @@ export const stakingClient = new ApolloClient({
 
 export const blockClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://subgraph.spook.fi/subgraphs/name/eerieeight/blocks',
+    uri: 'https://eon-graph.horizenlabs.io/subgraphs/name/0xALUKARD/eon-blocks',
   }),
   cache: new InMemoryCache(),
 })
