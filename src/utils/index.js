@@ -48,14 +48,14 @@ export function getTimeframe(timeWindow) {
 export function getPoolLink(token0Address, token1Address = null, remove = false) {
   if (!token1Address) {
     return (
-      `https://btt.spooky.fi/#/`+
+      `https://eon.spooky.fi/#/`+
       (remove ? `remove` : `add`) +
       `/${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token0Address}/${'FTM'}`
     )
 
   } else {
     return (
-      `https://btt.spooky.fi/#/`+
+      `https://eon.spooky.fi/#/`+
       (remove ? `remove` : `add`) +
       `/${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token0Address}/`+
       `${token1Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token1Address}`
@@ -65,9 +65,9 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
 
 export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
-    return `https://btt.spooky.fi/#/swap?outputCurrency=${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token0Address}`
+    return `https://eon.spooky.fi/#/swap?outputCurrency=${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token0Address}`
   } else {
-    return `https://btt.spooky.fi/#/swap?inputCurrency=${
+    return `https://eon.spooky.fi/#/swap?inputCurrency=${
       token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token0Address
       }&outputCurrency=${token1Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token1Address}`
   }
@@ -78,11 +78,11 @@ export function getSwapLink(token0Address, token1Address = null) {
       */
 
 export function getMiningPoolLink(token0Address) {
-  return `https://btt.spooky.fi`
+  return `https://eon.spooky.fi`
 }
 
 export function getUniswapAppLink(linkVariable) {
-  let baseUniswapUrl = 'https://btt.spooky.fi'
+  let baseUniswapUrl = 'https://eon.spooky.fi'
   if (!linkVariable) {
     return baseUniswapUrl
   }
@@ -315,10 +315,10 @@ export const setThemeColor = (theme) => document.documentElement.style.setProper
 export const Big = (number) => new BigNumber(number)
 
 export const urls = {
-  showTransaction: (tx) => `https://bttcscan.com/tx/${tx}/`,
-  showAddress: (address) => `https://www.bttcscan.com/address/${address}/`,
-  showToken: (address) => `https://www.bttcscan.com/token/${address}/`,
-  showBlock: (block) => `https://bttcscan.com/block/${block}/`,
+  showTransaction: (tx) => `https://eon-explorer.horizenlabs.io/tx/${tx}/`,
+  showAddress: (address) => `https://eon-explorer.horizenlabs.io/address/${address}/`,
+  showToken: (address) => `https://eon-explorer.horizenlabs.io/token/${address}/`,
+  showBlock: (block) => `https://eon-explorer.horizenlabs.io/block/${block}/`,
 }
 
 export const formatTime = (unix) => {
