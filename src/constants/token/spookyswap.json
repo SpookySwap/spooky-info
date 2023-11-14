@@ -13,26 +13,6 @@
     "default"
   ],
   "tokens": [
-        {
-      "name": "SpookyTestToken",
-      "symbol": "SPKT",
-      "address": "0x3850fA3DB6E5Acc6d06EfC9B1eB4A9d1c0E3e068",
-      "chainId": 199,
-      "decimals": 18,
-      "logoURI": "",
-      "bridgeId": "",
-      "permit": 0
-    },
-    {
-      "name": "Dummy",
-      "symbol": "DUM",
-      "address": "0xE745071d92C6EdDC552060F74aa5c8133830519A",
-      "chainId": 199,
-      "decimals": 18,
-      "logoURI": "",
-      "bridgeId": "",
-      "permit": 0
-    },
     {
       "name": "Wrapped BTT",
       "symbol": "WBTT",
@@ -134,7 +114,7 @@
     },
     {
       "name": "ETH Fantom",
-      "symbol": " FTM_e",
+      "symbol": "FTM_e",
       "address": "0xAD9A21FF0c9d854cA8C1360AF28D4fcbDaC53B4F",
       "chainId": 199,
       "decimals": 18,
