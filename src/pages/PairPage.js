@@ -499,7 +499,7 @@ function PairPage({ pairAddress, history }) {
                   </Column>
                   <ButtonLight color={backgroundColor}>
                     <Link color={backgroundColor} external href={'https://eon-explorer.horizenlabs.io/address/' + pairAddress}>
-                      View on FTMscan ↗
+                      View on EON Explorer ↗
                     </Link>
                   </ButtonLight>
                 </TokenDetailsLayout>
