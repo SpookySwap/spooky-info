@@ -421,7 +421,7 @@ function TokenPage({ address, history }) {
                   </Column>
                   <ButtonLight color={backgroundColor}>
                     <Link color={backgroundColor} external href={'https://bttcscan.com/address/' + address}>
-                      View on FTMscan ↗
+                      View on BTTCScan ↗
                     </Link>
                   </ButtonLight>
                 </TokenDetailsLayout>
