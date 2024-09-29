@@ -471,17 +471,35 @@ const getEthPrice = async () => {
   let priceChangeETH = 0
 
   try {
-    let oneDayBlock = await getBlockFromTimestamp(utcOneDayBack)
-    let result = await client.query({
-      query: ETH_PRICE(),
-      fetchPolicy: 'cache-first',
-    })
-    let resultOneDay = await client.query({
-      query: ETH_PRICE(oneDayBlock),
-      fetchPolicy: 'cache-first',
-    })
-    const currentPrice = result?.data?.bundles[0]?.ethPrice
-    const oneDayBackPrice = resultOneDay?.data?.bundles[0]?.ethPrice
+    let result = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=fantom&vs_currencies=usd', {
+      method: 'GET',
+      cache: 'no-store',
+      headers: {
+        'Access-Control-Request-Method': 'GET',
+      },
+    });
+    const currentPriceData = await result.json();
+    const currentPrice = currentPriceData.fantom.usd;
+
+    // Correctly format the date for the API call
+    const formattedDate = dayjs.unix(utcOneDayBack).format('DD-MM-YYYY');
+
+    // Fetch historical price for WETH on Fantom
+    let resultOneDay = await fetch(`https://api.coingecko.com/api/v3/coins/fantom/history?date=${formattedDate}`, {
+      method: 'GET',
+      cache: 'no-store',
+      headers: {
+        'Access-Control-Request-Method': 'GET',
+      },
+    });
+
+    // Handle potential errors from the fetch
+    if (!resultOneDay.ok) {
+      throw new Error(`Error fetching historical data: ${resultOneDay.status}`);
+    }
+
+    const historicalPriceData = await resultOneDay.json();
+    const oneDayBackPrice = historicalPriceData.market_data.current_price.usd;
     priceChangeETH = getPercentChange(currentPrice, oneDayBackPrice)
     ethPrice = currentPrice
     ethPriceOneDay = oneDayBackPrice

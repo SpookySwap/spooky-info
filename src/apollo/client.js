@@ -4,7 +4,7 @@ import { HttpLink } from 'apollo-link-http'
 
 export const client = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.thegraph.com/subgraphs/name/eerieeight/spookyswap'
+    uri: 'https://gateway-arbitrum.network.thegraph.com/api/69161e1b3d98c04eaac0159a71bed889/subgraphs/id/HyhMfT7gehNHMBmFiExqeg3pDtop9UikjvBPfAXT3b21'
     ,
   }),
   cache: new InMemoryCache(),
@@ -13,7 +13,7 @@ export const client = new ApolloClient({
 
 export const healthClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.thegraph.com/subgraphs/name/eerieeight/spookyswap',
+    uri: 'https://gateway-arbitrum.network.thegraph.com/api/69161e1b3d98c04eaac0159a71bed889/subgraphs/id/HyhMfT7gehNHMBmFiExqeg3pDtop9UikjvBPfAXT3b21',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
@@ -29,7 +29,7 @@ export const stakingClient = new ApolloClient({
 
 export const blockClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.thegraph.com/subgraphs/name/matthewlilley/fantom-blocks',
+    uri: 'https://api.goldsky.com/api/public/project_clss7z2o15cxh010fdvq909x6/subgraphs/blocks/fantom/gn',
   }),
   cache: new InMemoryCache(),
 })
