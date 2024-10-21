@@ -296,10 +296,10 @@ async function getGlobalData(ethPrice, oldEthPrice) {
       )
 
       // add relevant fields with the calculated amounts
-      data.oneDayVolumeUSD = oneDayVolumeUSD
+      data.oneDayVolumeUSD = oneDayVolumeUSD / 10
       data.oneWeekVolume = oneWeekVolume
       data.weeklyVolumeChange = weeklyVolumeChange
-      data.volumeChangeUSD = volumeChangeUSD
+      data.volumeChangeUSD = volumeChangeUSD / 10
       data.liquidityChangeUSD = liquidityChangeUSD
       data.oneDayTxns = oneDayTxns
       data.txnChange = txnChange
@@ -462,53 +462,75 @@ const getGlobalTransactions = async () => {
 /**
  * Gets the current price  of ETH, 24 hour price, and % change between them
  */
+let cachedEthPrice = null
+let lastFetchTime = null
+let pendingEthPriceRequest = null
+
 const getEthPrice = async () => {
-  const utcCurrentTime = dayjs()
-  const utcOneDayBack = utcCurrentTime.subtract(1, 'day').startOf('minute').unix()
+  const cacheDuration = 60 * 1000 // 1 minute cache duration
+  const currentTime = Date.now()
 
-  let ethPrice = 0
-  let ethPriceOneDay = 0
-  let priceChangeETH = 0
-
-  try {
-    let result = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=fantom&vs_currencies=usd', {
-      method: 'GET',
-      cache: 'no-store',
-      headers: {
-        'Access-Control-Request-Method': 'GET',
-      },
-    });
-    const currentPriceData = await result.json();
-    const currentPrice = currentPriceData.fantom.usd;
-
-    // Correctly format the date for the API call
-    const formattedDate = dayjs.unix(utcOneDayBack).format('DD-MM-YYYY');
-
-    // Fetch historical price for WETH on Fantom
-    let resultOneDay = await fetch(`https://api.coingecko.com/api/v3/coins/fantom/history?date=${formattedDate}`, {
-      method: 'GET',
-      cache: 'no-store',
-      headers: {
-        'Access-Control-Request-Method': 'GET',
-      },
-    });
-
-    // Handle potential errors from the fetch
-    if (!resultOneDay.ok) {
-      throw new Error(`Error fetching historical data: ${resultOneDay.status}`);
-    }
-
-    const historicalPriceData = await resultOneDay.json();
-    const oneDayBackPrice = historicalPriceData.market_data.current_price.usd;
-    priceChangeETH = getPercentChange(currentPrice, oneDayBackPrice)
-    ethPrice = currentPrice
-    ethPriceOneDay = oneDayBackPrice
-  } catch (e) {
-    console.log(e)
+  if (cachedEthPrice && (currentTime - lastFetchTime < cacheDuration)) {
+    return cachedEthPrice
   }
 
-  return [ethPrice, ethPriceOneDay, priceChangeETH]
-}
+  // Check if a request is already pending to prevent duplicate API calls
+  if (pendingEthPriceRequest) {
+    return pendingEthPriceRequest;
+  }
+
+  pendingEthPriceRequest = (async () => {
+    let ethPrice = 0;
+    let ethPriceOneDay = 0;
+    let priceChangeETH = 0;
+
+    try {
+      const utcCurrentTime = dayjs();
+      const utcOneDayBack = utcCurrentTime.subtract(1, 'day').startOf('minute').unix()
+      const formattedDate = dayjs.unix(utcOneDayBack).format('DD-MM-YYYY')
+
+      // Make a single API call to fetch current and historical price (24-hour)
+      const currentPriceResult = await fetch(
+        `https://api.coingecko.com/api/v3/coins/fantom/market_chart?vs_currency=usd&days=1`,
+        {
+          method: 'GET',
+          cache: 'no-store',
+          headers: {
+            'Access-Control-Request-Method': 'GET',
+          },
+        }
+      )
+
+      const priceData = await currentPriceResult.json()
+
+      if (!priceData || !priceData.prices) {
+        throw new Error('Failed to retrieve price data')
+      }
+
+      const prices = priceData.prices
+      ethPrice = prices[prices.length - 1][1]
+      ethPriceOneDay = prices[0][1]
+
+      priceChangeETH = getPercentChange(ethPrice, ethPriceOneDay)
+
+      cachedEthPrice = [ethPrice, ethPriceOneDay, priceChangeETH]
+      lastFetchTime = currentTime;
+    } catch (e) {
+      console.error('Error fetching ETH price:', e)
+      // Return previous cached values if they exist, or fallback to default values
+      if (!cachedEthPrice) {
+        cachedEthPrice = [ethPrice, ethPriceOneDay, priceChangeETH]
+      }
+    } finally {
+      pendingEthPriceRequest = null
+    }
+
+    return cachedEthPrice
+  })();
+
+  return pendingEthPriceRequest
+};
+
 
 const PAIRS_TO_FETCH = 500
 const TOKENS_TO_FETCH = 500
@@ -662,15 +684,17 @@ export function useEthPrice() {
   const [state, { updateEthPrice }] = useGlobalDataContext()
   const ethPrice = state?.[ETH_PRICE_KEY]
   const ethPriceOld = state?.['oneDayPrice']
+
   useEffect(() => {
     async function checkForEthPrice() {
       if (!ethPrice) {
-        let [newPrice, oneDayPrice, priceChange] = await getEthPrice()
+        const [newPrice, oneDayPrice, priceChange] = await getEthPrice()
         updateEthPrice(newPrice, oneDayPrice, priceChange)
       }
     }
+
     checkForEthPrice()
-  }, [ethPrice, updateEthPrice])
+  }, [ethPrice])
 
   return [ethPrice, ethPriceOld]
 }

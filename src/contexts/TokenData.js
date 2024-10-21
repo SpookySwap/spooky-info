@@ -302,7 +302,7 @@ const getTopTokens = async (ethPrice, ethPriceOld) => {
           // set data
           data.priceUSD = data?.derivedETH * ethPrice
           data.totalLiquidityUSD = currentLiquidityUSD
-          data.oneDayVolumeUSD = parseFloat(oneDayVolumeUSD)
+          data.oneDayVolumeUSD = parseFloat(oneDayVolumeUSD) / 10
           data.volumeChangeUSD = volumeChangeUSD
           data.priceChangeUSD = priceChangeUSD
           data.liquidityChangeUSD = getPercentChange(currentLiquidityUSD ?? 0, oldLiquidityUSD ?? 0)
@@ -431,10 +431,10 @@ const getTokenData = async (address, ethPrice, ethPriceOld) => {
     // set data
     data.priceUSD = data?.derivedETH * ethPrice
     data.totalLiquidityUSD = currentLiquidityUSD
-    data.oneDayVolumeUSD = oneDayVolumeUSD
+    data.oneDayVolumeUSD = oneDayVolumeUSD / 10
     data.volumeChangeUSD = volumeChangeUSD
     data.priceChangeUSD = priceChangeUSD
-    data.oneDayVolumeUT = oneDayVolumeUT
+    data.oneDayVolumeUT = oneDayVolumeUT / 10
     data.volumeChangeUT = volumeChangeUT
     const liquidityChangeUSD = getPercentChange(currentLiquidityUSD ?? 0, oldLiquidityUSD ?? 0)
     data.liquidityChangeUSD = liquidityChangeUSD

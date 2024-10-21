@@ -277,12 +277,12 @@ function parseData(data, oneDayData, twoDayData, oneWeekData, ethPrice, oneDayBl
   )
 
   // set volume properties
-  data.oneDayVolumeUSD = parseFloat(oneDayVolumeUSD)
-  data.oneWeekVolumeUSD = oneWeekVolumeUSD
-  data.volumeChangeUSD = volumeChangeUSD
-  data.oneDayVolumeUntracked = oneDayVolumeUntracked
-  data.oneWeekVolumeUntracked = oneWeekVolumeUntracked
-  data.volumeChangeUntracked = volumeChangeUntracked
+  data.oneDayVolumeUSD = parseFloat(oneDayVolumeUSD) / 10
+  data.oneWeekVolumeUSD = oneWeekVolumeUSD / 10
+  data.volumeChangeUSD = volumeChangeUSD / 10
+  data.oneDayVolumeUntracked = oneDayVolumeUntracked / 10
+  data.oneWeekVolumeUntracked = oneWeekVolumeUntracked / 10
+  data.volumeChangeUntracked = volumeChangeUntracked / 10
 
   // set liquidity properties
   data.trackedReserveUSD = data.trackedReserveETH * ethPrice
